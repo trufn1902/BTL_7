@@ -1,0 +1,53 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.navbar{
+    background-color: #e62540;
+}
+
+.nav-link{
+    color: white !important ;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: Roboto, sans-serif;
+    margin-left: 20px;
+}
+
+.container .navbar-brand img{
+    height: 24px;
+    width: 135px;
+}
+
+/* .nav-item:hover .dropdown-menu làm cho menu con hiện ra luôn khi chạm vào mà không cần click */
+.nav-item:hover .dropdown-menu{
+    display: block;
+}
+
+.nav-item a:hover {
+    color:blue !important;
+}
+
+.dropdown-menu{
+    margin-left: 28px;
+    background-color: #E20726;
+    border-radius: 0;
+    padding: 0 0 0 0;
+    border: 0 solid;
+}
+
+.dropdown-item{
+    color: white !important;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover{
+    color: red !important;
+    background-color: #e5eaf4;
+}
+
+.nav-link img{
+    width: 27px;
+    height: 27px;
+}
