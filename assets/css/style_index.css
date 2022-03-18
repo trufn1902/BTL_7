@@ -1,0 +1,150 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    /* height: 3900px; */
+}
+
+.slider{
+    /* box-sizing: border-box; */
+    height: 648px;
+    /* text-align: center; */
+    /* padding-left: 0; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100vw;
+    height: 648px;
+}
+
+/* manual slide nav */
+
+.nav-manual{
+    position: absolute;
+    width: 100vw;
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: pink;
+}
+
+#radio1:checked ~ .slide-first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slide-first{
+    margin-left: calc(-20 * 1%);
+}
+
+#radio3:checked ~ .slide-first{
+    margin-left: calc(-20 * 2%);
+}
+
+#radio4:checked ~ .slide-first{
+    margin-left: calc(-20 * 3%);
+}
+
+#radio5:checked ~ .slide-first{
+    margin-left: calc(-20 * 4%);
+}
+
+#radio6:checked ~ .slide-first{
+    margin-left: calc(-20 * 5%);
+}
+
+#radio7:checked ~ .slide-first{
+    margin-left: calc(-20 * 6%);
+}
+
+#radio8:checked ~ .slide-first{
+    margin-left: calc(-20 * 7%);
+}
+
+/* css nav auto */
+
+.nav-auto{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 528px;
+}
+
+.nav-auto div{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 9px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background: pink;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background: pink;
+    
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background: pink;
+}
+
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background: pink;
+}
+
+#radio5:checked ~ .nav-auto .auto-btn5{
+    background: pink;
+}
+
+#radio6:checked ~ .nav-auto .auto-btn6{
+    background: pink;
+}
+
+#radio7:checked ~ .nav-auto .auto-btn7{
+    background: pink;
+}
+
+#radio8:checked ~ .nav-auto .auto-btn8{
+    background: pink;
+}
