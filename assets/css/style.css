@@ -15,6 +15,15 @@ body {
 
 /* Css for Header */
 
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: rgba(226, 7, 38, 0.88);
+    font-size: 14px;
+    position: relative;
+    z-index: 100;
+}
 .abs {
     position: absolute;
     left: 0;
@@ -24,24 +33,11 @@ body {
     min-width: 1280px;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    height: 70px;
-    background: rgba(226, 7, 38, 0.88);
-    font-size: 14px;
-}
-
 .content {
     display: flex;
     align-items: center;
     margin: 0 auto;
     width: 1366px;
-}
-
-img{
-    border: none;
-    vertical-align: middle;
 }
 
 .header-img,
@@ -52,8 +48,17 @@ img{
     padding: 0 51px 0 9px;
 }
 
+img{
+    border: none;
+    vertical-align: middle;
+}
+
 .left {
     width: 732px;
+}
+
+nav{
+    display: block;
 }
 
 ul {
@@ -67,9 +72,10 @@ ul {
     margin: 0 auto;
 }
 
-.nav-container li {
-    list-style-type: none;
+li {
+    display: list-item;
 }
+
 
 .nav-item {
     margin-left: 35px;
@@ -79,9 +85,14 @@ ul {
     height: 70px;
     position: relative;
 }
+.nav-container li {
+    list-style-type: none;
+}
 
-li {
-    display: list-item;
+.item-style {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .nav-link {
@@ -91,24 +102,6 @@ li {
     min-width: 44px;
     text-align: center;
     padding-bottom: 22px;
-}
-
-.item-style {
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-.nav-link::before,
-.nav-link::after,
-.link-active::before,
-.link-active::after {
-    width: 50%;
-}
-
-.nav-link:Fbefore {
-    transform: rotate(180deg);
-    transform-origin: left center;
 }
 
 .nav-link::after, .nav-link::before{
@@ -123,8 +116,19 @@ li {
     transition: width .2s ease-out;
 }
 
+.nav-link:before {
+    transform: rotate(180deg);
+    transform-origin: left center;
+}
+
 .nav-link::after {
     left: 50%;
+}
+.item-link-effect.itementer .nav-link::before,
+.item-link-effect.itementer .nav-link::after,
+.link-active::before,
+.link-active::after {
+    width: 50%;
 }
 
 .sub-item{

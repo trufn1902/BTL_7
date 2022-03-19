@@ -1,19 +1,13 @@
-const slide_show = () => {
-    let cnt = 1
-    const btns = document.querySelectorAll('.manual-btn')
-    btns.forEach(btn =>{
-        btn.addEventListener('click', () =>{
-            let forStr = btn.getAttribute('for').split('')
-            cnt = forStr[forStr.length - 1]
-        })
+const nav_hovers = document.querySelectorAll('.item-link-effect')
+
+nav_hovers.forEach(nav => {
+    nav.addEventListener('mouseover', () => {
+        if (!nav.classList.contains('link-active'))
+            nav.classList.add('itementer')
     })
 
-    setInterval(() =>{
-        document.getElementById('radio' + cnt).checked = true
-        cnt++
-        if (cnt > 8)
-            cnt = 1
-    }, 3000)
-}
-
-slide_show()
+    nav.addEventListener('mouseout', () => {
+        if (!nav.classList.contains('link-active'))
+            nav.classList.remove('itementer')
+    })
+})
