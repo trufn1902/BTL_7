@@ -1,0 +1,53 @@
+.container{
+    background-color: #F7F7F7;
+}
+
+.condition{
+    background-color: white;
+    max-width: 1033px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+h1{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 22.47px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-bottom: 15px;
+}
+
+h2{
+    font-size: 21px;
+    padding-left: 200px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Arial, sans-serif;;
+}
+
+.rules{
+    font-family: Arial, sans-serif;
+    line-height: 17.12px;
+    padding-bottom: 0;
+}
+
+p{
+    display: flex;
+    text-align: justify;
+    padding-left: 120px;
+    padding-right: 120px;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+
+.child{
+    padding-left: 170px;
+}
+
+h4{
+    font-family: Arial, sans-serif;
+    padding-left: 115px;
+    padding-bottom: 18px;
+}
+
