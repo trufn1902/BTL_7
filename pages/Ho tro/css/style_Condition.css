@@ -67,3 +67,14 @@ i{
     justify-content: center;
     padding-bottom: 16px;
 }
+
+.eight{
+    display:block;
+    padding-top: 20px;
+    padding-left: 160px;
+}
+
+.end{
+    display: block;
+    text-align: center;
+}
