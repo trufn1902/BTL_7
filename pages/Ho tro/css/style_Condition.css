@@ -27,7 +27,6 @@ h2{
 }
 
 .rules{
-    font-family: Arial, sans-serif;
     line-height: 17.12px;
     padding-bottom: 0;
 }
@@ -39,15 +38,32 @@ p{
     padding-right: 120px;
     line-height: 24px;
     padding-bottom: 15px;
+    font-family: Arial, sans-serif;
 }
 
 .child{
     padding-left: 170px;
 }
 
-h4{
+h4 b{
     font-family: Arial, sans-serif;
     padding-left: 115px;
     padding-bottom: 18px;
 }
 
+.imgcondition{
+    display: flex;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+i{
+    display:flex;
+    margin: auto;
+}
+
+.imgdouble{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+}
