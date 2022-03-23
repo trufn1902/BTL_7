@@ -101,3 +101,9 @@ h5{
     font-size: 14px;
     padding-bottom: 0;
 }
+
+hr{
+    display: flex;
+    width: 77%;
+    margin: auto;
+}
