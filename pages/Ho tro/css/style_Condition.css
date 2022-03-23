@@ -78,3 +78,26 @@ i{
     display: block;
     text-align: center;
 }
+
+.research{
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.imgresearch{
+    height: 111px;
+    width: 111px;
+}
+
+h5{
+    font-size: 14px;
+    color: #D70C18;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.define p{
+    font-size: 14px;
+    padding-bottom: 0;
+}
