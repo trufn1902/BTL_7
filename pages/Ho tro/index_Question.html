@@ -1,153 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Font awesome -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="../../assets/css/style.css" />
-        <link rel="stylesheet" href="css/style_Question.css" />
-        <title>Câu hỏi thường gặp</title>
-    </head>
-    <body>
-        <header class="header-container">
-            <div class="content">
-                <a href="/" id="homeLogo" class="header-img-link">
-                    <img src="../../assets/img/logo.png" alt="" class="header-img" />
-                </a>
-                <div class="left">
-                    <nav>
-                        <ul class="nav-container">
-                            <li class="nav-item item-link-effect">
-                                <a
-                                    href="/"
-                                    class="item-style nav-link link-active"
-                                    >Trang chủ</a
-                                >
-                            </li>
-                            <li class="nav-item item-link-effect">
-                                <a href="" class="item-style nav-link"
-                                    >BEST Express</a
-                                >
-                                <ul class="sub-item">
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Về BEST Express</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Giải quyết khiếu nại</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Hàng cấm gửi</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item item-link-effect">
-                                <a href="" class="item-style nav-link"
-                                    >Nhượng quyền</a
-                                >
-                                <ul class="sub-item">
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Nhượng quyền Bưu cục</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Đăng ký nhượng quyền</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item item-link-effect">
-                                <a href="" class="item-style nav-link"
-                                    >Hỗ trợ</a
-                                >
-                                <ul class="sub-item">
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Thông tin liên hệ</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Câu hỏi thường gặp</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Điều kiện - Điều khoản</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="" class="sub-item-style"
-                                            >Chính sách Nhận diện nhãn hiệu</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item item-link-effect">
-                                <a href="" class="item-style nav-link"
-                                    >Tạo đơn</a
-                                >
-                            </li>
-                            <li class="nav-item item-link-effect">
-                                <a href="" class="item-style nav-link"
-                                    >Tin tức</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="right">
-                    <div class="nav-item">
-                        <span class="item-style nav-link">
-                            <span></span>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </span>
-                        <ul class="sub-item">
-                            <li data-lang="vi">
-                                <span class="sub-item-style">VI</span>
-                            </li>
-                            <li data-lang="en">
-                                <span class="sub-item-style">EN</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="uname">
-                        <a href="" class="item-style">
-                            <img
-                                class="uimg"
-                                src="../../assets/img/login.png"
-                                alt=""
-                            />
-                            <span>Đăng nhập</span>
-                        </a>
-                        <span style="margin: 0px 13px">|</span>
-                        <a href="" id="homePageRegister" class="item-style">
-                            <span>Đăng ký thông tin tài khoản mới</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        <img src="img/FAQ.png" alt="" class="FAQ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="css/style_Question.css" />
+    <title>Câu hỏi thường gặp</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="content">
+        <a href="/" id="homeLogo" class="header-img-link">
+          <img src="../../assets/img/logo.png" alt="" class="header-img" />
+        </a>
+        <div class="left">
+          <nav>
+            <ul class="nav-container">
+              <li class="nav-item item-link-effect">
+                <a href="/" class="item-style nav-link link-active"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item item-link-effect">
+                <a href="" class="item-style nav-link">BEST Express</a>
+                <ul class="sub-item">
+                  <li>
+                    <a href="" class="sub-item-style">Về BEST Express</a>
+                  </li>
+                  <li>
+                    <a href="" class="sub-item-style">Giải quyết khiếu nại</a>
+                  </li>
+                  <li>
+                    <a href="" class="sub-item-style">Hàng cấm gửi</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item item-link-effect">
+                <a href="" class="item-style nav-link">Nhượng quyền</a>
+                <ul class="sub-item">
+                  <li>
+                    <a href="" class="sub-item-style">Nhượng quyền Bưu cục</a>
+                  </li>
+                  <li>
+                    <a href="" class="sub-item-style">Đăng ký nhượng quyền</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item item-link-effect">
+                <a href="" class="item-style nav-link">Hỗ trợ</a>
+                <ul class="sub-item">
+                  <li>
+                    <a href="" class="sub-item-style">Thông tin liên hệ</a>
+                  </li>
+                  <li>
+                    <a href="index_Question.html" class="sub-item-style">Câu hỏi thường gặp</a>
+                  </li>
+                  <li>
+                    <a href="index_Condition.html" class="sub-item-style"
+                      >Điều kiện - Điều khoản</a
+                    >
+                  </li>
+                  <li>
+                    <a href="index_Brand.html" class="sub-item-style"
+                      >Chính sách Nhận diện nhãn hiệu</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item item-link-effect">
+                <a href="" class="item-style nav-link">Tạo đơn</a>
+              </li>
+              <li class="nav-item item-link-effect">
+                <a href="" class="item-style nav-link">Tin tức</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <div class="nav-item">
+            <span class="item-style nav-link">
+              <span></span>
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul class="sub-item">
+              <li data-lang="vi">
+                <span class="sub-item-style">VI</span>
+              </li>
+              <li data-lang="en">
+                <span class="sub-item-style">EN</span>
+              </li>
+            </ul>
+          </div>
+          <div class="uname">
+            <a href="" class="item-style">
+              <img class="uimg" src="../../assets/img/login.png" alt="" />
+              <span>Đăng nhập</span>
+            </a>
+            <span style="margin: 0px 13px">|</span>
+            <a href="" id="homePageRegister" class="item-style">
+              <span>Đăng ký thông tin tài khoản mới</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-        
-        <!-- JS -->
-        <script src="assets/js/script.js"></script>
-    </body>
+    <img src="img/FAQ.png" alt="" class="FAQ" />
+
+    <div class="container">
+      <div class="Question">
+        <h1><b>Câu hỏi thường gặp</b></h1>
+        <hr />
+        <h4 style="padding-top: 15px">
+          1. Phí vận chuyển được tính như thế nào?
+        </h4>
+        <p>
+          &nbsp;&nbsp; Phí vận chuyển được tính dựa trên kích thước và trọng
+          lượng của gói hàng
+        </p>
+        <h4>
+          2. Mức phụ phí cho khu vực vùng sâu vùng xa và khu vực đặc biệt?
+        </h4>
+        <p>
+          &nbsp;&nbsp; Phụ phí cho dịch vụ vận chuyển đến vùng sâu, vùng xa và
+          khu vực đặc biệt có thể được tính dựa trên thông tin bưu cục nhận hàng
+          và bưu cục phát hàng.
+        </p>
+        <h4>3. Thời gian giao hàng như thế nào?</h4>
+        <p>
+          &nbsp;&nbsp; Các chuyến hàng từ TPHCM đến nội miền (và từ nội miền đến
+          TPHCM) được gửi trước thời gian qui định sẽ được chuyển đến bưu cục
+          phát vào ngày hôm sau (trừ các ngày cuối tuần và các ngày lễ trong
+          năm). Các gói hàng nội miền sẽ được giao trong 1-3 ngày (không kể cuối
+          tuần và ngày lễ trong nước).
+        </p>
+        <h4>4. Tôi có thể yêu cầu biên nhận hoặc hóa đơn thuế không?</h4>
+        <p>
+          &nbsp;&nbsp; Có, tuy nhiên biên nhận hoặc hóa đơn VAT chỉ được phát
+          hành trong ngày tại bưu cục gửi.
+        </p>
+        <h4>
+          5. Tôi có được nhận chứng từ xác nhận việc bưu cục đã tiếp nhận hàng
+          không?
+        </h4>
+        <p>
+          &nbsp;&nbsp; Bưu cục gửi sẽ giao cho người gửi hàng biên nhận đơn
+          hàng, trên đó có số bưu kiện để người gửi dễ dàng tra cứu thông tin và
+          trạng thái đơn hàng trên website www.best-inc.vn hoặc trên ứng dụng
+          BEST Epress app.
+        </p>
+        <h4>6. Tôi có thể theo dõi trạng thái đơn hàng ở đâu?</h4>
+        <p>
+          &nbsp;&nbsp; Quý khách có thể theo dõi trạng thái giao hàng qua trang
+          web www.best-inc.vn hoặc ứng dụng BEST Express của chúng tôi hoặc gọi
+          đến tổng đài chăm sóc khách hàng của chúng tôi - Hotline: 1900 1031,
+          từ 7:30 - 19:00, thứ 2 đến thứ 6 và 8:00 - 17:00 thứ 7, Chủ nhật.
+        </p>
+        <h4>7. Tôi có thể hủy đặt nhận hàng bằng cách nào?</h4>
+        <p>
+          &nbsp;&nbsp; Quý khách có thể hủy đặt nhận hàng qua trang web
+          www.best-inc.vn hoặc ứng dụng BEST Express của chúng tôi hoặc gọi đến
+          tổng đài chăm sóc khách hàng của chúng tôi - Hotline: 1900 1031, từ
+          7:30 - 19:00, thứ 2 đến thứ 6 và 8:00 - 17:00 thứ 7, Chủ nhật.
+        </p>
+        <h4>8. Tôi có thể thay đổi thông tin giao hàng bằng cách nào?</h4>
+        <p>
+          &nbsp;&nbsp; Quý khách có thay đổi thông tin qua trang web
+          www.best-inc.vn hoặc ứng dụng BEST Express của chúng tôi hoặc gọi đến
+          tổng đài chăm sóc khách hàng của chúng tôi - Hotline: 1900 1031, từ
+          7:30 - 19:00, thứ 2 đến thứ 6 và 8:00 - 17:00 thứ 7, Chủ nhật. Vui
+          lòng lưu ý, việc thay đổi sẽ diễn ra trong vòng 1-3 ngày.
+        </p>
+        <h4>9. Tôi có thể hủy giao hàng bằng cách nào?</h4>
+        <p>
+          &nbsp;&nbsp; Quý khách vui lòng gọi đến tổng đài chăm sóc khách hàng
+          của chúng tôi - Hotline: 1900 1031, từ 7:30 - 19:00, thứ 2 đến thứ 6
+          và 8:00 - 17:00 thứ 7, Chủ nhật để hủy giao hàng.
+        </p>
+        <h4>10. Tôi có thể hoãn ngày phát hàng bằng cách nào?</h4>
+        <p>
+          &nbsp;&nbsp; Quý khách có thể gọi đến tổng đài chăm sóc khách hàng của
+          chúng tôi - Hotline: 1900 1031, từ 7:30 - 19:00, thứ 2 đến thứ 6 và
+          8:00 - 17:00 thứ 7, Chủ nhật để yêu cầu hoãn phát hàng, với điều kiện
+          ngày phát hàng mới không vượt quá 5 ngày kể từ ngày phát hàng cũ.
+        </p>
+        <h4>
+          11. Tôi nên làm gì nếu tôi chưa nhận được hàng hóa khi hạn giao hàng
+          đã tới?
+        </h4>
+        <p>
+          &nbsp;&nbsp; Chúng tôi có ghi nhận thông tin về ngày giao hàng ước
+          tính của mỗi gói hàng, nếu Quý khách không nhận được gói hàng của
+          mình, vui lòng gọi đến tổng đài chăm sóc khách hàng 1900 1031 (từ 7:30
+          - 19:00, thứ 2 đến thứ 6 và 8:00 - 17:00 thứ 7, Chủ nhật) để được tư
+          vấn.
+        </p>
+        <h4>
+          12. Các lý do khác khiến hàng không thể phát được là gì và làm thế nào
+          để tôi thu hồi lại chúng?
+        </h4>
+        <p>
+          &nbsp;&nbsp; Có nhiều lý do khiến các gói hàng của Quý khách không
+          phát được, bao gồm nhưng không giới hạn, phát hàng không thành công 3
+          lần hoặc phát hàng bị từ chối bởi người nhận hàng. Nếu gói hàng được
+          gửi trả về bưu cục nhận ban đầu, hàng sẽ được gửi trả cho Quý khách
+          kèm theo phụ phí.
+        </p>
+        <h4>13. Bảo hiểm trách nhiệm là gì?</h4>
+        <p>
+          &nbsp;&nbsp; Mỗi gói hàng thông thường sẽ được định mức bảo hiểm trách
+          nhiệm nhất định nếu hàng bị mất hoặc hư hỏng với nguyên nhân do BEST
+          Express, với điều kiện là gói hàng nằm trong danh sách yêu cầu bồi
+          thường. Mức bảo hiểm trách nhiệm của gói hàng tùy thuộc vào việc người
+          giao hàng mua gói bao nhiêu, tối đa là 100% giá trị đơn hàng.
+        </p>
+        <h4>14. Tôi nên làm gì nếu gói hàng bị hỏng hoặc mất?</h4>
+        <p>
+          &nbsp;&nbsp; Quý khách vui lòng liên hệ với tổng đài chăm sóc khách
+          hàng của chúng tôi - Hotline: 1900 1031 từ 7:30 - 19:00, thứ 2 đến thứ
+          6 và 8:00 - 17:00 thứ 7, Chủ nhật) ngay khi phát hiện ra thiệt hại
+          hoặc mất mát để việc kiểm tra đạt hiệu quả cao nhất. Chúng tôi sẽ
+          nhanh chóng kiểm tra và cập nhật kết quả cho quý khách sớm nhất có
+          thể.
+        </p>
+        <h4>15. Các điều kiện và thủ tục yêu cầu bồi thường là gì?</h4>
+        <p>
+          &nbsp;&nbsp; Bưu kiện phải được đóng gói đúng cách vì người nhận hàng
+          có thể từ chối lô hàng ngay khi phát hiện nó bị hư hỏng hoặc đóng gói
+          không đúng. Thời hạn để khiếu nại là 14 ngày kể từ ngày giao hàng. Qúy
+          khách vui lòng liên hệ tổng đài chăm sóc khách hàng của chúng tôi -
+          Hotline:1900 1031 (từ 7:30 - 19:00, thứ 2 đến thứ 6 và 8:00 - 17:00
+          thứ 7, Chủ nhật) để được tư vấn chi tiết.
+        </p>
+        <h4>
+          16. Tôi cần chuẩn bị những giấy tờ nào khi sử dụng dịch vụ giao hàng
+          thu hộ (COD)?
+        </h4>
+        <h5>Khách hàng cá nhân cần cung cấp các giấy tờ sau:</h5>
+        <h5>- Bản sao tài khoản ngân hàng</h5>
+        <h5 style="padding-bottom: 25px">
+          - Chứng minh nhân dân đối với người ở địa phương và hộ chiếu đối với
+          người nước ngoài (bản sao có thể được chấp nhận)
+        </h5>
+        <h5>Khách hàng công ty cần cung cấp các giấy tờ sau:</h5>
+        <h5>- Bản sao tài khoản ngân hàng</h5>
+        <h5>- Giấy ủy quyền</h5>
+        <h5>- Giấy phép kinh doanh</h5>
+        <h5 style="padding-bottom: 30px">
+          - Chứng minh thư của người gửi hàng (có thể chấp nhận bản sao)
+        </h5>
+        <h4>
+          17. Tôi nên làm gì nếu tôi muốn thay đổi thông tin của tài khoản COD
+          đã đăng ký?
+        </h4>
+        <p>
+          Do chính sách của công ty, chúng tôi không thay đổi bất kỳ thông tin
+          nào trong tài khoản COD. Qúy khách có thể tự thao tác tại trang web
+          www.best-inc.vn hoặc tại ứng dụng BEST Express để thay đổi thông tin.
+        </p>
+        <h4>
+          18. Khi nào người gửi hàng sẽ nhận được khoản thanh toán COD thu được
+          từ người nhận hàng?
+        </h4>
+        <p>
+          Khoản thanh toán COD sẽ được chuyển về cho các chủ hàng trong vòng từ
+          1 đến 3 ngày làm việc (tùy vào số lượng đơn hàng và chi phí COD), tính
+          từ thời điểm gói hàng được phát thành công và việc thu hộ COD đã hoàn
+          tất.
+        </p>
+        <h4>19. Tôi nên làm gì nếu không nhận được khoản thanh toán COD?</h4>
+        <p>
+          Quý khách vui lòng liên hệ tổng đài chăm sóc khách hàng của chúng tôi
+          tại Hotline: 1900 1031 (từ 7:30 - 19:00, thứ 2 đến thứ 6 và 8:00 -
+          17:00 thứ 7, Chủ nhật) và báo mã số đơn hàng để được tư vấn chi tiết.
+        </p>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
