@@ -1,9 +1,9 @@
-.new3 h1{
+.new4 h1{
     text-align: center;
     padding-top: 75px;
 }
 
-.new3 h5{
+.new4 h5{
     font-size: 14px;
     color: #4A4A4A;
     font-weight: lighter;
@@ -12,7 +12,7 @@
     padding-bottom: 45px;
 }
 
-.new3 p{
+.new4 p{
     font-family: Roboto, serif;
     font-size: 18px;
     width: 900px;
@@ -20,13 +20,13 @@
     margin: auto;
 }
 
-.new3 .imgnew3{
-    width: 891px;
+.imgnew4{
+    width: 868px;
     padding-left: 310px;
     padding-bottom: 20px;
 }
 
-.new3 h4{
+.new4 h4{
     font-size: 18px;
     width: 900px;
     margin: auto;
