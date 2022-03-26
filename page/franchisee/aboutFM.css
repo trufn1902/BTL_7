@@ -1,0 +1,15 @@
+#illu-pic{
+    width: 100%;
+}
+.contentWapper{
+    width:1vw;
+}
+.content{
+    width: 80%;
+    margin: auto;
+}
+.heading1{
+    display: block;
+    flex: 1;
+    font-size: 32px;
+}
