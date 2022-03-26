@@ -51,3 +51,25 @@ table{
     color: #000000;
     padding-top: 20px;
 }
+
+.button {
+    width: 379px;
+    height: 38px;
+    background-color: #E20726;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    font-size: 14px;
+    margin-left: 600px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px 0 #9dafbd;
+}
+
+.button:hover {
+    background-color: #d10412;
+  }
+
+table{
+    padding-bottom: 70px;
+}
