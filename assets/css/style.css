@@ -125,9 +125,8 @@ li {
     left: 50%;
 }
 .item-link-effect.itementer .nav-link::before,
-.item-link-effect.itementer .nav-link::after,
-.link-active::before,
-.link-active::after {
+.item-link-effect.itementer .nav-link::after
+ {
     width: 50%;
 }
 
