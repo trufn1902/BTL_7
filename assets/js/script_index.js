@@ -1,3 +1,4 @@
+// Slide Show
 const slide_show = () => {
     let cnt = 1
     const btns = document.querySelectorAll('.manual-btn')
@@ -17,3 +18,20 @@ const slide_show = () => {
 }
 
 slide_show()
+
+// Services under slide show
+const services = document.querySelectorAll('.services-link')
+
+services.forEach(service =>{
+    let src1 = service.children[0].src
+    let src2 = service.children[0].src.slice(0, -4) + '_2.png'
+    service.addEventListener('mouseover', () =>{
+        service.classList.add('services-enter')
+        service.children[0].src = src2
+    })
+
+    service.addEventListener('mouseout', () =>{
+        service.classList.remove('services-enter')
+        service.children[0].src = src1
+    })
+})

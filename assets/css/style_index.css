@@ -1,9 +1,16 @@
 main{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     background-color: #fff;
     width: 100%;
+    position: relative;
+    /* height: 3900px; */
+}
+
+.link-active::before,
+.link-active::after{
+    width: 50%;
 }
 
 .slider{
@@ -16,7 +23,7 @@ main{
 }
 
 .slides{
-    width: 500%;
+    width: 500vw;
     height: 100%;
     display: flex;
 }
@@ -46,8 +53,8 @@ main{
 }
 
 .manual-btn{
-    border: 2px solid red;
-    padding: 5px;
+    border: 2px solid white;
+    padding: 3px;
     border-radius: 9px;
     cursor: pointer;
     transition: 1s;
@@ -104,8 +111,8 @@ main{
 }
 
 .nav-auto div{
-    border: 2px solid red;
-    padding: 5px;
+    border: 2px solid white;
+    padding: 3px;
     border-radius: 9px;
     transition: 1s;
 }
@@ -116,36 +123,35 @@ main{
 
 
 #radio1:checked ~ .nav-auto .auto-btn1{
-    background: pink;
+    background: white;
 }
 
 #radio2:checked ~ .nav-auto .auto-btn2{
-    background: pink;
-    
+    background: white;
 }
 
 #radio3:checked ~ .nav-auto .auto-btn3{
-    background: pink;
+    background: white;
 }
 
 #radio4:checked ~ .nav-auto .auto-btn4{
-    background: pink;
+    background: white;
 }
 
 #radio5:checked ~ .nav-auto .auto-btn5{
-    background: pink;
+    background: white;
 }
 
 #radio6:checked ~ .nav-auto .auto-btn6{
-    background: pink;
+    background: white;
 }
 
 #radio7:checked ~ .nav-auto .auto-btn7{
-    background: pink;
+    background: white;
 }
 
 #radio8:checked ~ .nav-auto .auto-btn8{
-    background: pink;
+    background: white;
 }
 
 /* Css for Search */
@@ -234,18 +240,18 @@ form{
 
 /* Css for Wrap */
 
-.wrap{
+.wrap-services{
     width: 100%;
     background: rgba(226,7,38,.8);
 }
 
-.wrap-services {
+.services {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
 }
 
-.link {
+.services-link {
     width: 255px;
     flex-grow: 1;
     display: block;
@@ -260,14 +266,20 @@ form{
     font-weight: 500;
 }
 
-.link:after, .link:before {
+.services-link:after {
+    right: 0;
+    height: 27px;
+    top: 36px;
+}
+
+.services-link:not(:last-child)::after, .link:before {
     content: "";
     position: absolute;
     width: 1px;
     background: #fff;
 }
 
-.link:before {
+.services-link:before {
     left: -1px;
     top: 0;
     height: 100%;
@@ -275,10 +287,9 @@ form{
     transition: opacity .3s;
 }
 
-.link:after {
-    right: 0;
-    height: 27px;
-    top: 36px;
+.services-enter{
+    background: #fff;
+    color: #e20727;
 }
 
 img{
@@ -289,4 +300,79 @@ img{
 .services-icon{
     margin-right: 27px;
     vertical-align: middle;
+}
+
+.express__about-content{
+    display: flex;
+}
+
+.express__about-text{
+    flex-grow: 1;
+    padding-right: 51px;
+}
+
+.express__about-text-title{
+    border-bottom: 1px solid #979797;
+    margin-bottom: 14px;
+    color: #e20726;
+    line-height: 43px;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 2px 0 6px;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.express__about-img-link{
+    flex-grow: 1;
+    display: block;
+    flex-shrink: 0;
+}
+img{
+    border: none;
+    vertical-align: middle;
+}
+
+.express__about-video{
+    display: flex;
+    justify-content: center;
+}
+
+.milestones-title, .best-inc_services-title{
+    color: rgb(218, 33, 40);
+    line-height: 24px;
+    font-size: 30px;
+}
+
+.milestones-img{
+    margin-top: inherit;
+}
+
+.list-services li{
+    margin-left: 30px;
+}
+
+section{
+    display: block;
+}
+
+.wrap-news{
+    background: #f8f8f8;
+}
+
+.simple__news{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.simple__news-header{
+    padding: 60px 63px 20px 50px;
 }

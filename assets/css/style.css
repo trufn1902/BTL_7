@@ -7,6 +7,7 @@
 }
 
 body {
+    width: 100%;
     min-width: 1280px;
     text-rendering: optimizeLegibility;
     background: #fff !important;
@@ -124,10 +125,9 @@ li {
 .nav-link::after {
     left: 50%;
 }
+
 .item-link-effect.itementer .nav-link::before,
-.item-link-effect.itementer .nav-link::after,
-.link-active::before,
-.link-active::after {
+.item-link-effect.itementer .nav-link::after{
     width: 50%;
 }
 

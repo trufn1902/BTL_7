@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="assets/css/style_index.css" />
         <title>BEST Express</title>
     </head>
-    <body>
+    <body style="overflow-x: hidden">
         <header class="header-container abs">
             <div class="content">
                 <a href="/" id="homeLogo" class="header-img-link">
@@ -147,38 +147,42 @@
             <!-- Start: Slide -->
             <div class="slider">
                 <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <input type="radio" name="radio-btn" id="radio5">
-                    <input type="radio" name="radio-btn" id="radio6">
-                    <input type="radio" name="radio-btn" id="radio7">
-                    <input type="radio" name="radio-btn" id="radio8">
+                    <input type="radio" name="radio-btn" id="radio1" />
+                    <input type="radio" name="radio-btn" id="radio2" />
+                    <input type="radio" name="radio-btn" id="radio3" />
+                    <input type="radio" name="radio-btn" id="radio4" />
+                    <input type="radio" name="radio-btn" id="radio5" />
+                    <input type="radio" name="radio-btn" id="radio6" />
+                    <input type="radio" name="radio-btn" id="radio7" />
+                    <input type="radio" name="radio-btn" id="radio8" />
 
                     <div class="slide slide-first">
-                        <img src="assets/img/slide1.jpg" alt="">
+                        <img src="assets/img/slide1.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide2.jpg" alt="">
+                        <img src="assets/img/slide2.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide3.jpg" alt="">
+                        <img
+                            src="assets/img/slide3.jpg"
+                            alt=""
+                            style="width: 100%"
+                        />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide4.jpg" alt="">
+                        <img src="assets/img/slide4.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide5.jpg" alt="">
+                        <img src="assets/img/slide5.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide6.jpg" alt="">
+                        <img src="assets/img/slide6.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide7.jpg" alt="">
+                        <img src="assets/img/slide7.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide8.jpg" alt="">
+                        <img src="assets/img/slide8.jpg" alt="" />
                     </div>
 
                     <div class="nav-auto">
@@ -206,41 +210,245 @@
             </div>
             <!-- End: Slide -->
             <!-- Start: Search -->
-            <div class="search" style="position: absolute; left: 40px; top: 380px;">
+            <div
+                class="search"
+                style="position: absolute; left: 40px; top: 380px"
+            >
                 <div class="search-container">
                     <form>
                         <div class="search-input" id="fixedHeight">
                             <div class="taginput">
                                 <span>
-                                    <input type="text" name="" class="taginput-input" placeholder="Nhập số đơn đặt hàng / truy vấn số vận đơn">
+                                    <input
+                                        type="text"
+                                        name=""
+                                        class="taginput-input"
+                                        placeholder="Nhập số đơn đặt hàng / truy vấn số vận đơn"
+                                    />
                                 </span>
                             </div>
                         </div>
-                        <button class="search-btn btn primary" type="submit" style="vertical-align: baseline;">
+                        <button
+                            class="search-btn btn primary"
+                            type="submit"
+                            style="vertical-align: baseline"
+                        >
                             <span>Tra cứu</span>
                         </button>
                     </form>
                 </div>
             </div>
             <!-- End: Search -->
-            <!-- Start: Wrap -->
-            <div class="wrap" style="position: absolute; left: 0px; top: 550px;">
-                <div class="wrap-services">
-                    <a href="/shipping#/single" class="link">
-                        <img class="services-icon" width="64" height="34" src="assets/img/services_icon1.png" alt="">
-                        Tạo đơn & Pick up 
+            <!-- Start: Services -->
+            <div
+                class="wrap-services"
+                style="position: absolute; left: 0px; top: 550px"
+            >
+                <div class="services">
+                    <a href="/shipping#/single" class="services-link">
+                        <img
+                            class="services-icon"
+                            width="64"
+                            height="34"
+                            src="assets/img/services_icon1.png"
+                            alt=""
+                        />
+                        Tạo đơn & Pick up
                     </a>
-                    <a href="/fee" class="link">
-                        <img class="services-icon" width="64" height="34" src="assets/img/services_icon2.png" alt="">
+                    <a href="/fee" class="services-link">
+                        <img
+                            class="services-icon"
+                            width="64"
+                            height="34"
+                            src="assets/img/services_icon2.png"
+                            alt=""
+                        />
                         Cước phí dự tính
                     </a>
-                    <a href="/sitequery" class="link">
-                        <img class="services-icon" width="64" height="34" src="assets/img/services_icon3.png" alt="">
-                        Tìm kiếm bưu cục 
+                    <a href="/sitequery" class="services-link">
+                        <img
+                            class="services-icon"
+                            width="64"
+                            height="34"
+                            src="assets/img/services_icon3.png"
+                            alt=""
+                        />
+                        Tìm kiếm bưu cục
                     </a>
                 </div>
             </div>
-            <!-- End: Wrap -->
+            <!-- End: Services -->
+            <!-- Start: Content -->
+            <div
+                class="content_container"
+                style="
+                    position: absolute;
+                    width: 55%;
+                    top: 720px;
+                    left: 130px;
+                    margin-left: calc(50% - 640px);
+                "
+            >
+                <!-- Start: About Express -->
+                <div class="express__about">
+                    <div class="express__about-content">
+                        <div class="express__about-text">
+                            <div class="express__about-text-title">
+                                <h4>VỀ BEST INC.</h4>
+                            </div>
+                            <div class="express__about-desc">
+                                <p style="line-height: 18px">
+                                    Được thành lập từ năm 2007, Best Inc (NYSE:
+                                    BEST) là nhà cung cấp hàng đầu về dịch vụ
+                                    logistics và chuỗi cung ứng thông minh toàn
+                                    cầu. Thông qua nền tảng công nghệ độc quyền
+                                    và mạng lưới rộng khắp, Best mang đến các
+                                    dịch vụ logistics và dịch vụ gia tăng đa
+                                    dạng, bao gồm quản lý chuỗi cung ứng, dịch
+                                    vụ xe tải và dịch vụ giao hàng quốc tế. Sứ
+                                    mệnh của Best là Trao quyền làm chủ và Làm
+                                    giàu cuộc sống bằng việc ứng dụng công nghệ
+                                    và đổi mới mô hình kinh doanh để tạo ra một
+                                    chuỗi cung ứng thông minh hơn, hiệu quả hơn
+                                </p>
+                                <p>
+                                    Với lợi thế xuất thân từ ngành công nghệ
+                                    thông tin và có đội ngũ nhân lực công nghệ
+                                    thông tin tinh nhuệ, BEST Inc. đã tạo ra một
+                                    nền tảng dịch vụ chuỗi cung ứng hiệu quả nhờ
+                                    ứng dụng các công nghệ tiên tiến vào quản lý
+                                    và vận hành. Bằng việc tăng cường ứng dụng
+                                    công nghệ tự động hóa vào hoạt động, BEST
+                                    Inc. đang không ngừng hoàn thiện mọi trải
+                                    nghiệm của khách hàng và ngày càng nâng cao
+                                    chất lượng dịch vụ.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="express__about-img">
+                            <img
+                                class="express__about-img-link"
+                                src="assets/img/best_inc.png"
+                                style="height: 200px; width: 340px"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="express__about-video">
+                        <video
+                            controls
+                            poster="assets/img/poster_vid.JPG"
+                            src="assets/vid/video1.mp4"
+                            style="height: 480px; width: 720px"
+                        ></video>
+                    </div>
+                    <p>
+                        Ngày 20/9/2017, BEST Inc. chính thức niêm yết cổ phiếu
+                        của trên sàn chứng khoán New York, Hoa Kỳ (NYSE: BEST),
+                        tạo nên bước phát triển vượt bậc cho tập đoàn. Đến nay,
+                        tập đoàn BEST Inc. đã phát triển dịch vụ tại 17 quốc gia
+                        trên toàn thế giới.
+                    </p>
+                    <p>
+                        Tại Việt Nam, tập đoàn Best inc triển khai 2 dịch vụ:
+                        Dịch vụ chuyển phát nhanh Best Express và Mô hình nhượng
+                        quyền bưu cục Best Express.
+                    </p>
+                </div>
+                <!-- End: About Express -->
+                <!-- Start: Milestones -->
+                <div class="milestones" style="margin-top: 40px">
+                    <div class="milestones-title">
+                        Cột mốc phát triển của BEST Inc.
+                    </div>
+                    <div class="milestones-img">
+                        <img src="assets/img/img1.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- End: Milestones -->
+                <!-- Start: BEST Inc services -->
+                <div class="best-inc_services" style="margin-top: 30px">
+                    <div class="best-inc_services-title">
+                        Các dịch vụ của BEST Inc.
+                    </div>
+                    <div class="best-inc_services-desc">
+                        <p>
+                            Nhằm tối ưu hóa trải nghiệm của người dùng, BEST Inc
+                            tạo ra một hệ sinh thái đa dạng, hỗ trợ tối đa mọi
+                            nhu cầu của khách hàng với 7 loại hình dịch vụ:
+                        </p>
+                        <ul class="list-services">
+                            <li>
+                                <p>
+                                    Chuyển phát nhanh (Best Express): xử lý hàng
+                                    triệu đơn hàng mỗi ngày bao gồm dịch vụ giao
+                                    hàng nhanh và các phương thức thanh toán
+                                    linh hoạt COD, bằng chứng giao hàng POD và
+                                    khai giá bảo hiểm
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dịch vụ vận chuyển hàng hóa (Best Freight):
+                                    dịch vụ vận chuyển hàng hóa đầu cho phép vận
+                                    chuyển hàng lẻ (LTL) và vận chuyển hàng đầy
+                                    xe (FTL) giao hàng tận nơi bằng xe tải
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Chuỗi cung ứng thông minh (Best Supply
+                                    Chain): dịch vụ chuỗi cung ứng thông minh
+                                    3PL hàng đầu
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Nền tảng điện toán lưu trữ thông tin (Best
+                                    Cloud): nền tảng điện toán độc quyền để hỗ
+                                    trợ quản lý đơn hàng
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dịch vụ hậu cần thương mại điện tử (Best
+                                    Global): có mặt tại 15 quốc gia và vùng lãnh
+                                    thổ khắp Bắc Mỹ, Châu Âu và Châu Á
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dịch vụ xe tải (Best Ucargo) : ứng dụng cung
+                                    cấp dịch vụ xe tải
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dịch vụ tài chính (Best Capital): dịch vụ
+                                    tài chính hỗ trợ cho hệ sinh thái BEST’s eco
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="best-inc_services-img">
+                        <img src="assets/img/img2.jpg" alt="">
+                    </div>
+                </div>
+                <!-- End: BEST Inc services -->
+            </div>
+            <!-- End: Content -->
+            <!-- Start: News -->
+            <section class="wrap-news" style="position: absolute; top: 3450px; width: 100%;">
+                <div class="simple__news">
+                    <div class="simple__news-header">
+                        <h3 class="news">
+                            <span>News</span>
+                        </h3>
+                        <a href="pages/News/index_New.html" class="more"></a>
+                    </div>
+                </div>
+            </section>
+            <!-- End: News -->
         </main>
         <footer></footer>
         <!-- JS -->
