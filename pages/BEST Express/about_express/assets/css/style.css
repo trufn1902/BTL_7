@@ -2,14 +2,14 @@
     font-family: arial, helvetica, sans-serif;
 }
 
-.poster {
-    height: 495px;
-}
-
 p{
     font-size: 13px;
     text-align: justify;
     line-height: 18px;
+}
+
+.poster {
+    height: 495px;
 }
 
 .content__container {
@@ -26,6 +26,6 @@ p{
     padding: 2px 0px 6px;
 }
 
-.express__system{
+.content-item{
     margin-top: 40px;
 }
