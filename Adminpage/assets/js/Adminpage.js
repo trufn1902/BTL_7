@@ -10,7 +10,7 @@ const contentlistorder = [
     comeback: "0",
     status: "Mất",
     collection: "850.000",
-    indemnify: "450.000"
+    indemnify: "450.000",
 },
 
 {
@@ -22,24 +22,48 @@ const contentlistorder = [
     comeback: "11.500",
     status: "Chuyển hoàn",
     collection: "0",
-    indemnify: "0"
+    indemnify: "0",
 },
-]
+];
 
-let Expressdelivery = contentlistorder.map ((Order,i) => {
-    return
+let Expressdelivery = contentlistorder.map ((ord,i) => {
+    return`
     <tr>
-        <td>${Order.code}</td>
-        <td>${Order.phonenumber}</td>
-        <td>${Order.ordervalue}</td>
+        <td></td>
+        <td>${ord.code}</td>
+        <td>${ord.phonenumber}</td>
+        <td>${ord.ordervalue}</td>
         <td>
             <a href=""><i class="fa-solid fa-eye"></i></a>
         </td>
-        <td>${Order.freight}</td>
-        <td>${Order.comeback}</td>
-        <td>${Order.status}</td>
-        <td>${Order.collection}</td>
-        <td>${Order.indemnify}</td>
-        <td></td>
+        <td>${ord.freight}</td>
+        <td>${ord.comeback}</td>
+        <td>${ord.status}</td>
+        <td>${ord.collection}</td>
+        <td>${ord.indemnify}</td>
+        <td>
+            <a href=""><i class="fa-solid fa-pencil"></i></a>
+        </td>
+        <td>
+            <a href = ""><i class="fa-solid fa-trash-can"></i></a>
+        </td>
     </tr>
+     `;
 });
+
+contentlist.innerHTML = Expressdelivery.join("")
+
+
+// const toggle = document.querySelector("#toggle")
+
+// var isToggle = false;
+// toggle.addEventListener("click", () => {
+//   isToggle = !isToggle;
+//   if (isToggle) {
+//     formAdd.classList.remove("none");
+//     formAdd.classList.add("block");
+//   } else {
+//     formAdd.classList.remove("block");
+//     formAdd.classList.add("none");
+//   }
+// });
