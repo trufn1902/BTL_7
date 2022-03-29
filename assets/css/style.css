@@ -200,3 +200,43 @@ li {
 
 
 /* ========== */
+
+/* css for footer */
+footer{
+    height: 430px;
+    width: 100%;
+}
+footer .footer-main{
+    margin: auto;
+    height: 100%;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    /* padding: 67px 50px 44px 50px; */
+}
+footer .footer-main>table{
+    /* background-color: aqua; */
+    width: 1076px;
+    height: 320px;
+    margin: auto;
+}
+footer .footer-main>table>td{
+    border-spacing: 2px 2px ;
+    padding: 1px 1px;
+    /* align-content: space-between; */
+    /* display: unsets; */
+    vertical-align: top
+}
+footer .footer-main table p{
+    min-height: 19px;
+    font-size: 12px;
+    color: #fff;
+}
+footer .footer-main table p strong{
+    font-size: 16px;
+    border-bottom: #fff solid 1px;
+    padding-bottom: 6px;
+}
+footer .footer-main table p img{
+    height: 40px;
+}

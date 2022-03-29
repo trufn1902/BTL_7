@@ -11,16 +11,33 @@
 }
 .contentWapper{
     width:1vw;
+    background-color: #f8f8f8;
 }
-/* .content{
+.bex10-content{
     width: 1100px;
     margin: auto;
-} */
+}
 .heading1{
     display: block;
     flex: 1;
     font-size: 32px;
     width: 100%;
     border-bottom: 1px solid #979797;
-    color: red;
+    color: #e20726;
+    line-height: 43px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
 }
+/* .heading1 strong{
+    font-weight: bold;
+} */
+
+.bex10-content p{
+    min-height: 19.2px; ;
+}
+
+.bex10-content>p>span{
+    line-height: 25.5px;
+    font-size: 14px;
+}
+
