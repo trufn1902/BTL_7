@@ -14,7 +14,7 @@
         />
         <link rel="stylesheet" href="../../../assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
-        <title>Sign up</title>
+        <title>Retrieve password</title>
     </head>
     <body style="overflow-x: hidden">
         <header class="header-container styred">
@@ -62,7 +62,9 @@
                                         >
                                     </li>
                                     <li>
-                                        <a href="../../BEST Express/forbidden/forbidden.html" class="sub-item-style"
+                                        <a
+                                            href="../../BEST Express/forbidden/forbidden.html"
+                                            class="sub-item-style"
                                             >Hàng cấm gửi</a
                                         >
                                     </li>
@@ -151,7 +153,7 @@
                         </a>
                         <span style="margin: 0px 13px">|</span>
                         <a
-                            href="register.html"
+                            href="../register/register.html"
                             id="homePageRegister"
                             class="item-style"
                         >
@@ -163,14 +165,14 @@
         </header>
         <main>
             <div class="content-container">
-                <h2 class="title">Đăng ký thông tin tài khoản mới</h2>
+                <h2 class="title">Lấy lại mật khẩu</h2>
                 <div>
                     <!-- Start: Steps -->
                     <div class="steps">
                         <div class="step" data-index="1">
                             <span class="step-cont active">
                                 <span class="step-index">01</span>
-                                <span>Thông tin tài khoản</span>
+                                <span>Cung cấp thông tin</span>
                             </span>
                         </div>
                         <div class="step" data-index="2">
@@ -201,7 +203,9 @@
                                             class="input inputlg clearable"
                                             oninput="checkPhoneNumber()"
                                         />
-                                        <i class="fa-solid fa-xmark clear clearPhone hidden"></i>
+                                        <i
+                                            class="fa-solid fa-xmark clear clearPhone hidden"
+                                        ></i>
                                     </div>
                                     <div
                                         class="error statusOfPhone"
@@ -236,27 +240,6 @@
                                     </div>
                                     <div
                                         class="error statusOfCode"
-                                        style="min-height: 20px"
-                                    ></div>
-                                </div>
-                                <div class="username">
-                                    <label for="username" class="label">
-                                        <span class="required"></span>
-                                        <span>Tên đăng nhập</span>
-                                    </label>
-                                    <div class="input-wrap">
-                                        <input
-                                            type="text"
-                                            name="username"
-                                            id="username"
-                                            placeholder="Tên đăng nhập"
-                                            class="input inputlg clearable"
-                                            oninput="checkUsername()"
-                                        />
-                                        <i class="fa-solid fa-xmark clear clearUsername hidden"></i>
-                                    </div>
-                                    <div
-                                        class="error statusOfUsername"
                                         style="min-height: 20px"
                                     ></div>
                                 </div>
@@ -306,26 +289,6 @@
                                         style="min-height: 20px"
                                     ></div>
                                 </div>
-                                <div class="email">
-                                    <label for="email" class="label">
-                                        <span>Địa chỉ Email</span>
-                                    </label>
-                                    <div class="input-wrap">
-                                        <input
-                                            type="text"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Địa chỉ Email"
-                                            class="input inputlg clearable"
-                                            oninput="checkEmail()"
-                                        />
-                                        <i class="fa-solid fa-xmark clear clearEmail hidden"></i>
-                                    </div>
-                                    <div
-                                        class="error statusOfEmail"
-                                        style="min-height: 20px"
-                                    ></div>
-                                </div>
                                 <div class="submit">
                                     <button
                                         class="btn btn-submit"
@@ -333,10 +296,7 @@
                                         style="vertical-align: baseline"
                                         onclick="btnSubmit(event)"
                                     >
-                                        <span
-                                            >Đăng ký thông tin tài khoản
-                                            mới</span
-                                        >
+                                        <span>Gửi đi</span>
                                     </button>
                                 </div>
                             </form>
@@ -344,19 +304,35 @@
                         <div class="wrap-links">
                             <p>
                                 <a href="../login/login.html" class="btn link">
-                                    <span style="margin-right: 5px;">></span>
+                                    <span style="margin-right: 5px">></span>
                                     <span>Đăng nhập tài khoản? Đăng nhập</span>
                                 </a>
                             </p>
                             <div class="qrcodes">
                                 <div class="apps">
                                     <div class="app">
-                                        <img src="assets/img/qr_IOS.png" class="app-qrcode" alt="">
-                                        <img src="assets/img/iphone.png" class="iphone" alt="">
+                                        <img
+                                            src="assets/img/qr_IOS.png"
+                                            class="app-qrcode"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="assets/img/iphone.png"
+                                            class="iphone"
+                                            alt=""
+                                        />
                                     </div>
                                     <div class="app">
-                                        <img src="assets/img/qr_ANDR.png" class="app-qrcode" alt="">
-                                        <img src="assets/img/android.png" class="android" alt="">
+                                        <img
+                                            src="assets/img/qr_ANDR.png"
+                                            class="app-qrcode"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="assets/img/android.png"
+                                            class="android"
+                                            alt=""
+                                        />
                                     </div>
                                     <div class="app-qr-tip">
                                         <span>scanAppQrTip</span>
@@ -366,7 +342,9 @@
                         </div>
                     </div>
                     <div class="copyr">
-                        <span style="color: #7f8488; font-size: 12px;">Copyright © 2021</span>
+                        <span style="color: #7f8488; font-size: 12px"
+                            >Copyright © 2021</span
+                        >
                     </div>
                     <!-- End: Wrap -->
                 </div>
