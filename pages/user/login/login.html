@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>BEST Express</title>
+    </head>
+    <body>
+        <div
+            class="wrap"
+            style="
+                background: url(./assets/img/bg.jpg) no-repeat 50%;
+                background-size: cover;
+            "
+        >
+            <section class="wrap-form">
+                <img class="logo" src="assets/img/logo.png" alt="" />
+                <h2 class="title">
+                    <span>Đăng nhập</span>
+                </h2>
+                <form action="form">
+                    <div class="form-lang">
+                        <span>
+                            <span id = "0" class="lang active" data-lang="vi" onclick="chooseLang()">VI</span>
+                            <span class="divid" style="padding: 0 5px">|</span>
+                        </span>
+                        <span id ="1" class="lang" data-lang="en" onclick="chooseLang()">EN</span>
+                    </div>
+                    <div>
+                        <div class="form-input">
+                            <input
+                                type="text"
+                                placeholder="Số điện thoại / Email / Tên đăng nhập"
+                                oninput="clearUserID()"
+                                class="input inputlg clearable"
+                                name="userID"
+                            />
+                            <i class="fa-solid fa-xmark clear hidden"></i>
+                            <div
+                                class="error statusOfUserID"
+                                style="min-height: 20px"
+                            ></div>
+                        </div>
+                        <div class="form-input">
+                            <input
+                                type="password"
+                                placeholder="Mật khẩu"
+                                class="input inputlg revealable"
+                                name="password"
+                                oninput="checkPass()"
+                                autocomplete="off"
+                            />
+                            <i class="fa-solid fa-eye-slash eye" onclick="togglePass()"></i>
+                            <i class="fa-solid fa-eye eye hidden" onclick="togglePass()"></i>
+                            <div
+                                class="error statusOfPassword"
+                                style="min-height: 20px"
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="opt">
+                        <div class="otp-wrap">
+                            <a
+                                href=""
+                                class="forgot-pass opt-link"
+                                style="vertical-align: baseline"
+                                >Quên mật khẩu</a
+                            >
+                        </div>
+                        <div class="otp-wrap align-rt">
+                            <a
+                                href="../register/register.html"
+                                class="register opt-link"
+                                style="vertical-align: baseline"
+                                >Đăng ký mới</a
+                            >
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button
+                            type="submit"
+                            class="btn-submit"
+                            style="vertical-align: baseline"
+                            onclick="checkAccount(event)"
+                        >
+                            Đăng nhập
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!-- JS -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
