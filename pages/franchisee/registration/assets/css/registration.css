@@ -1,0 +1,118 @@
+.imgWrapper{
+    width: 100%;
+}
+.wrapper{
+    margin: auto;
+    width: 1100px;
+    display: flex;
+}
+
+.wrapper h3{
+    color: #e20726;
+    font-size: 30px;
+    font-weight: 700px  ;
+    margin-top: 20px;
+}
+
+.left-wrapper{
+    width: 30%;
+}
+.left-wrapper p{
+    line-height: 33px;
+}
+.left-wrapper h4{
+    color: #e20726;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.right-wrapper{
+    width: 69%;
+    margin-left: 38px;
+}
+.right-wrapper label{
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+.right-wrapper input{
+    /* display: block; */
+    /* flex: 1; */
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom:1px solid #CCCCCC;
+    color: #174f9a;
+}
+.right-wrapper input:focus{
+    /* border: none; */
+    outline: none;
+    border-bottom:1px solid #174f9a;
+    /* background-color: aqua; */
+
+}
+.right-wrapper select{
+    font-size: 16px;
+    height: 43px;
+}
+.right-wrapper select:focus{
+    /* border: none; */
+    outline: none;
+    color: #174f9a;
+    border-bottom:1px solid #174f9a;
+    /* background-color: aqua; */
+
+}
+
+.right-wrapper .error-input{
+    height: 20px;
+}
+.right-wrapper select{
+    border: none;
+    border-bottom:1px solid #CCCCCC;
+
+}
+
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+    border-top: 6px solid red;
+    margin-top: 42px;
+    padding: 68px 0;
+}
+
+
+.footer-wrapper .icon-name{
+    display: block;
+    font-size: 30px;
+    padding: 26px 0;
+}
+
+.footer-wrapper .icon-content{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.required{
+    color:red;
+    font-style: italic;
+}
+#Regis-icon{
+    margin: auto; 
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    background-color: #e20726;
+    height: 60px;
+    width: 268px;
+    font-size: 30px; 
+    font-weight: 700; 
+    box-shadow: 0 0 2px 1px grey;
+    margin-top: 100px;
+}
+#Regis-icon:hover{
+    cursor: pointer;
+}

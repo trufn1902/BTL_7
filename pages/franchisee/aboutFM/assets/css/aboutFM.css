@@ -2,7 +2,7 @@
     width: 100%;
 }
 #background {
-    background-image: url('franchisee0.jpg');
+    background-image: url('../img/franchisee0.jpg');
     padding-bottom: 600px;
     background-repeat: no-repeat;
     background-position: center;
