@@ -14,10 +14,12 @@
 
 .new0 p{
     font-size: 18px;
-    background-color: #FCFAF6;
     width: 900px;
     margin: auto;
     padding-bottom: 17px;
+}
+.new0 p span{
+    background-color: #FCFAF6;
 }
 
 .imgnew0{
@@ -29,8 +31,11 @@
 
 .new0 h4{
     font-size: 18px;
-    background-color: #FCFAF6;
     width: 900px;
     margin: auto;
     font-weight: normal;
+}
+
+.new0 h4 span{
+    background-color: #FCFAF6;
 }
