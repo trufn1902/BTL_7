@@ -72,11 +72,6 @@
   padding-right: 60px;
 }
 
-.addmenu a{
-  text-decoration: none;
-  color: black;
-}
-
 .down{
   display: flex;
   text-decoration: none;
