@@ -27,7 +27,7 @@
                 <h2 class="title">
                     <span>Đăng nhập</span>
                 </h2>
-                <form action="form">
+                <form action="" name="myForm">
                     <div class="form-lang">
                         <span>
                             <span id = "0" class="lang active" data-lang="vi" onclick="chooseLang()">VI</span>
@@ -89,8 +89,7 @@
                         <button
                             type="submit"
                             class="btn-submit"
-                            style="vertical-align: baseline"
-                            onclick="checkAccount(event)"
+                            onclick="login()"
                         >
                             Đăng nhập
                         </button>
@@ -100,5 +99,6 @@
         </div>
         <!-- JS -->
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/login.js"></script>
     </body>
 </html>
