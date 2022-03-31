@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../../../assets/css/style.css" />
     <link rel="stylesheet" href="../../../assets/css/style_index.css" />
     <link rel="stylesheet" href="assets/css/registration.css">
-    <title>Shipping</title>
+    <title>Franchisee Register</title>
 </head>
 <body style="background-color: #f8f8f8;">
     <!-- start: Header -->
@@ -175,13 +175,19 @@
             <label style="display: block" for="">
                 <span class="required">* </span><span>Họ & tên</span>
             </label>
-            <input type="text" placeholder="Họ & tên" id="mem_name">
-            <div class="error-input"></div>
+            <div style="position: relative;">
+                <input type="text" placeholder="Họ & tên" id="mem_name" oninput="checkName()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            
+            <div class="error-input" id="statusOfName"></div>
+
             <label style="display: block" for="">
                 <span class="required">* </span><span>Số điện thoại</span>
             </label>
             <input type="text" placeholder="Số điện thoại" id="mem_phone">
-            <div class="error-input"></div>
+            <div class="error-input" id="statusOfPhone"></div>
+
             <label style="display: block" for="">
                 <span class="required">* </span><span>Email</span>
             </label>
