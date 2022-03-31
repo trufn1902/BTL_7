@@ -1,16 +1,16 @@
-const contentlist = document.querySelector("#contentlist")
+var contentlist = document.querySelector("#contentlist")
 
-const arr = [
+var arr = [
 {
     stt:"1",
     code: "55043886653",
     phonenumber: "0988456723",
     ordervalue: "900.000",
     details: "... Địa chỉ nhận: Đường 23, phố Nguyễn Huệ, Hà Nội, ...",
+    collection: "850.000",
+    status: "Mất",
     freight: "53.000",
     comeback: "0",
-    status: "Mất",
-    collection: "850.000",
     indemnify: "450.000",
 },
 
@@ -20,50 +20,51 @@ const arr = [
     phonenumber: "0345214568",
     ordervalue: "600.000",
     details: "... Địa chỉ nhận: Thôn 2, Kim Liên, Quốc Oai, Hà Nội, ...",
+    collection: "0",
+    status: "Chuyển hoàn",
     freight: "22.000",
     comeback: "11.500",
-    status: "Chuyển hoàn",
-    collection: "0",
     indemnify: "0",
 },
 ];
 
-let Expressdelivery = arr.map ((ord,i) => {
-    return`
-    <tr>
-        <td>${ord.stt}</td>
-        <td>${ord.code}</td>
-        <td>${ord.phonenumber}</td>
-        <td>${ord.ordervalue}</td>
-        <td>
-            <a href=""><i class="fa-solid fa-eye"></i></a>
-        </td>
-        <td>${ord.freight}</td>
-        <td>${ord.comeback}</td>
-        <td>${ord.status}</td>
-        <td>${ord.collection}</td>
-        <td>${ord.indemnify}</td>
-        <td>
-            <a href=""><i class="fa-solid fa-pencil"></i></a>
-        </td>
-        <td>
-            <a href = ""><i class="fa-solid fa-trash-can"></i></a>
-        </td>
-    </tr>
-     `;
-});
+function delivery(){
+    let Expressdelivery = arr.map ((ord,i) => {
+        return`
+        <tr>
+            <td>${ord.stt}</td>
+            <td>${ord.code}</td>
+            <td>${ord.phonenumber}</td>
+            <td>${ord.ordervalue}</td>
+            <td>
+                <a href=""><i class="fa-solid fa-eye"></i></a>
+            </td>
+            <td>${ord.collection}</td>
+            <td>${ord.status}</td>
+            <td>${ord.freight}</td>
+            <td>${ord.comeback}</td>
+            <td>${ord.indemnify}</td>
+            <td>
+                <a href = "#" onclick="editadd(this.id)" id="${ord.stt}" ><i class="fa-solid fa-pencil"></i></a>
+            </td>
+            <td>
+                <a href = "#" onclick="deleteadd(this.id)" id="${ord.stt}" ><i class="fa-solid fa-trash-can"></i></a>
+            </td>
+        </tr>
+         `;
+    });
+    contentlist.innerHTML = Expressdelivery.join("");
+}
 
-contentlist.innerHTML = Expressdelivery.join("");
-
-const morenew = document.querySelector("#morenew")
-const isMorenew = false;
+var morenew = document.querySelector("#morenew")
+var isMorenew = false;
 morenew.addEventListener("click", () => {
   isMorenew = !isMorenew;
   if (isMorenew) {
     addnew.classList.remove("form");
-    addnew.classList.add("block");
+    addnew.classList.add("noform");
   } else {
-    addnew.classList.remove("block");
+    addnew.classList.remove("noform");
     addnew.classList.add("form");
   }
 });
@@ -79,10 +80,10 @@ inputStatus = document.querySelector("input[name=status]");
 inputCollection = document.querySelector("input[name=collection]");
 inputIndemnify = document.querySelector("input[name=indemnify]");
 
+
 let add = document.getElementById("add");
 add.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(inputCode.value)
     let newlist = {
       stt: arr.length + 1,
       code: inputCode.value,
@@ -90,42 +91,16 @@ add.addEventListener("click", (e) => {
       ordervalue: inputOrderValue.value,
       details: inputDetails.value,
       freight: inputFreight.value,
-      comeback: inputComeback.value,
       status: inputStatus.value,
+      comeback: inputComeback.value,
       collection: inputCollection.value,
       indemnify: inputIndemnify.value,  
     };
   
     arr.push(newlist);
-  
-    let Expressdelivery = arr.map ((ord,i) => {
-    return`
-    <tr>
-        <td>${ord.stt}</td>
-        <td>${ord.code}</td>
-        <td>${ord.phonenumber}</td>
-        <td>${ord.ordervalue}</td>
-        <td>
-            <a href=""><i class="fa-solid fa-eye"></i></a>
-        </td>
-        <td>${ord.freight}</td>
-        <td>${ord.comeback}</td>
-        <td>${ord.status}</td>
-        <td>${ord.collection}</td>
-        <td>${ord.indemnify}</td>
-        <td>
-            <a href=""><i class="fa-solid fa-pencil"></i></a>
-        </td>
-        <td>
-            <a href = ""><i class="fa-solid fa-trash-can"></i></a>
-        </td>
-    </tr>
-     `;
+    delivery()
 });
-    //
-    contentlist.innerHTML = Expressdelivery.join("");
-  });
-  
+       
 
 
 let submit = document.getElementById('add')
@@ -249,3 +224,9 @@ setInterval(() =>{
         disableBtn()
     }
 }, 1)
+
+function deleteadd(stt){
+    arr = arr.filter(ord => ord.stt != stt )
+    delivery()
+}
+delivery();

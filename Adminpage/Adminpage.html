@@ -120,7 +120,7 @@
         </tbody>
       </table>
 
-      <h3>Thêm mới</h3>
+      <h3>Thông tin chi tiết</h3>
 
       <form id="addnew" class="form" ction="">
         <div class="row" style="padding-top: 20px;">
@@ -220,15 +220,30 @@
           </div>
         </div>
 
-        <div class="row" style="padding-left: 190px; padding-bottom: 20px;">
-          <input
+        <div class="row" style="padding-left: 90px; padding-bottom: 20px; ">
+          <div class="col-1">
+            <input
                     type="submit"
                     name="add"
                     id="add"
-                    value="Submit"
-                    disabled
+                    value="Thêm"
                     class="add"
+                    style="width: 120px"
+                    disabled
                 />
+          </div>
+          <div class="col-2">
+            <input
+                    type="submit"
+                    name="edit"
+                    id="edit"
+                    value="Cập nhật"
+                    class="edit"
+                    style="width:120px"
+                    onclick="update()"
+                    disabled
+                />
+          </div>
         </div>
       </form>
     </div>
