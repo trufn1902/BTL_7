@@ -87,6 +87,7 @@ add.addEventListener("click", (e) => {
       stt: arr.length + 1,
       code: inputCode.value,
       phonenumber: inputPhoneNumber.value,
+      ordervalue: inputOrderValue.value,
       details: inputDetails.value,
       freight: inputFreight.value,
       comeback: inputComeback.value,
@@ -125,3 +126,126 @@ add.addEventListener("click", (e) => {
     contentlist.innerHTML = Expressdelivery.join("");
   });
   
+
+
+let submit = document.getElementById('add')
+function disableBtn(){
+    submit.disabled = true
+  }
+  
+function enableBtn(){
+    submit.disabled = false
+}
+
+let Code = document.getElementById('code')
+let statusOfCode = document.getElementById('statusOfCode')
+let checkCode = false
+
+Code.addEventListener('focusout', () =>{
+    let CodeRegex = /^[0-9]+$/
+
+    if (CodeRegex.test(Code.value)){
+        statusOfCode.textContent = ''
+        statusOfCode.style.color = ''
+        checkCode = true
+    }else{
+        statusOfCode.textContent = 'Vui lòng nhập thông tin theo gợi ý'
+        statusOfCode.style.color = 'red'
+        checkCode = false
+    }
+})
+
+let Phonenumber = document.getElementById('phonenumber')
+let statusOfPhonenumber = document.getElementById('statusOfPhonenumber')
+let checkPhonenumber = false
+
+Phonenumber.addEventListener('focusout', () =>{
+    let PhonenumberRegex = /^[0-9]{10}$/
+
+    if (PhonenumberRegex.test(phonenumber.value)){
+        statusOfPhonenumber.textContent = ''
+        statusOfPhonenumber.style.color = ''
+        checkPhonenumber = true
+    }else{
+        statusOfPhonenumber.textContent = 'Vui lòng nhập thông tin theo gợi ý'
+        statusOfPhonenumber.style.color = 'red'
+        checkPhonenumber = false
+    }
+})
+
+
+let Ordervalue = document.getElementById('ordervalue')
+let statusOfOrdervalue = document.getElementById('statusOfOrdervalue')
+let checkOrdervalue = false
+Ordervalue.addEventListener('focusout', () =>{
+    let OrdervalueRegex = /^\$?\d+((,\d{3})+)?(\.\d+)?$/
+
+    if (OrdervalueRegex.test(ordervalue.value)){
+        statusOfOrdervalue.textContent = ''
+        statusOfOrdervalue.style.color = ''
+        checkOrdervalue = true
+    }else{
+        statusOfOrdervalue.textContent = 'Vui lòng nhập thông tin theo gợi ý'
+        statusOfOrdervalue.style.color = 'red'
+        checkOrdervalue = false
+    }
+})
+
+let Freight = document.getElementById('freight')
+let statusOfFreight = document.getElementById('statusOfFreight')
+let checkFreight = false
+Freight.addEventListener('focusout', () =>{
+    let FreightRegex = /^\$?\d+((,\d{3})+)?(\.\d+)?$/
+
+    if (FreightRegex.test(freight.value)){
+        statusOfFreight.textContent = ''
+        statusOfFreight.style.color = ''
+        checkFreight = true
+    }else{
+        statusOfFreight.textContent = 'Vui lòng nhập thông tin theo gợi ý'
+        statusOfFreight.style.color = 'red'
+        checkFreight = false
+    }
+})
+
+let Comeback = document.getElementById('comeback')
+let statusOfComeback = document.getElementById('statusOfComeback')
+let checkComeback = false
+Comeback.addEventListener('focusout', () =>{
+    let ComebackRegex = /^\$?\d+((,\d{3})+)?(\.\d+)?$/
+
+    if (ComebackRegex.test(comeback.value)){
+        statusOfComeback.textContent = ''
+        statusOfComeback.style.color = ''
+        checkComeback = true
+    }else{
+        statusOfComeback.textContent = 'Vui lòng nhập thông tin theo gợi ý'
+        statusOfComeback.style.color = 'red'
+        checkComeback = false
+    }
+})
+
+let Collection = document.getElementById('collection')
+let statusOfCollection = document.getElementById('statusOfCollection')
+let checkCollection = false
+Collection.addEventListener('focusout', () =>{
+    let CollectionRegex = /^\$?\d+((,\d{3})+)?(\.\d+)?$/
+
+    if (CollectionRegex.test(collection.value)){
+        statusOfCollection.textContent = ''
+        statusOfCollection.style.color = ''
+        checkCollection = true
+    }else{
+        statusOfCollection.textContent = 'Vui lòng nhập thông tin theo gợi ý'
+        statusOfCollection.style.color = 'red'
+        checkCollection = false
+    }
+})
+
+setInterval(() =>{
+    if (checkCode && checkPhonenumber && checkOrdervalue && checkFreight && checkComeback && checkCollection)
+        enableBtn()
+    else{
+        disableBtn()
+    }
+}, 1)

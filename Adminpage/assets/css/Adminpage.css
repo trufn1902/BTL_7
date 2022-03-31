@@ -105,18 +105,17 @@ form{
   /* position: relative; */
   box-shadow: 5px 5px 10px 5px gray;
   margin: auto;
-  height: 570px;
 }
 
 #addnew .row{
   display: flex;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   padding-top: 11px;
 }
 
 #addnew .col-1{
   flex: 2;
-  padding-right: 5px;
+  padding-right: 15px;
   text-align: right;
 }
 
@@ -124,3 +123,26 @@ form{
   flex: 3;
 }
 
+#statusOfCode{
+  display: block;
+}
+
+#statusOfPhonenumber{
+  display: block;
+}
+
+#ordervalue{
+  display: block;
+}
+
+#freight{
+  display: block;
+}
+
+#comeback{
+  display: flex;
+}
+
+#collection{
+  display: block;
+}
