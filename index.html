@@ -16,10 +16,10 @@
         <link rel="stylesheet" href="assets/css/style_index.css" />
         <title>BEST Express</title>
     </head>
-    <body>
+    <body style="overflow-x: hidden">
         <header class="header-container abs">
             <div class="content">
-                <a href="/" id="homeLogo" class="header-img-link">
+                <a href="index.html" id="homeLogo" class="header-img-link">
                     <img src="assets/img/logo.png" alt="" class="header-img" />
                 </a>
                 <div class="left">
@@ -27,28 +27,34 @@
                         <ul class="nav-container">
                             <li class="nav-item item-link-effect">
                                 <a
-                                    href="/"
+                                    href="index.html"
                                     class="item-style nav-link link-active"
                                     >Trang chủ</a
                                 >
                             </li>
                             <li class="nav-item item-link-effect">
-                                <a href="" class="item-style nav-link"
+                                <a
+                                    href="pages/BEST Express/about_express/about_express.html"
+                                    class="item-style nav-link"
                                     >BEST Express</a
                                 >
                                 <ul class="sub-item">
                                     <li>
-                                        <a href="" class="sub-item-style"
+                                        <a
+                                            href="pages/BEST Express/about_express/about_express.html"
+                                            class="sub-item-style"
                                             >Về BEST Express</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="" class="sub-item-style"
+                                        <a
+                                            href="pages/BEST Express/resolve/resolve.html"
+                                            class="sub-item-style"
                                             >Giải quyết khiếu nại</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="" class="sub-item-style"
+                                        <a href="pages/BEST Express/forbidden/forbidden.html" class="sub-item-style"
                                             >Hàng cấm gửi</a
                                         >
                                     </li>
@@ -127,7 +133,10 @@
                         </ul>
                     </div>
                     <div class="uname">
-                        <a href="" class="item-style">
+                        <a
+                            href="pages/user/login/login.html"
+                            class="item-style"
+                        >
                             <img
                                 class="uimg"
                                 src="assets/img/login.png"
@@ -136,7 +145,11 @@
                             <span>Đăng nhập</span>
                         </a>
                         <span style="margin: 0px 13px">|</span>
-                        <a href="" id="homePageRegister" class="item-style">
+                        <a
+                            href="pages/user/register/register.html"
+                            id="homePageRegister"
+                            class="item-style"
+                        >
                             <span>Đăng ký thông tin tài khoản mới</span>
                         </a>
                     </div>
@@ -147,38 +160,42 @@
             <!-- Start: Slide -->
             <div class="slider">
                 <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <input type="radio" name="radio-btn" id="radio5">
-                    <input type="radio" name="radio-btn" id="radio6">
-                    <input type="radio" name="radio-btn" id="radio7">
-                    <input type="radio" name="radio-btn" id="radio8">
+                    <input type="radio" name="radio-btn" id="radio1" />
+                    <input type="radio" name="radio-btn" id="radio2" />
+                    <input type="radio" name="radio-btn" id="radio3" />
+                    <input type="radio" name="radio-btn" id="radio4" />
+                    <input type="radio" name="radio-btn" id="radio5" />
+                    <input type="radio" name="radio-btn" id="radio6" />
+                    <input type="radio" name="radio-btn" id="radio7" />
+                    <input type="radio" name="radio-btn" id="radio8" />
 
                     <div class="slide slide-first">
-                        <img src="assets/img/slide1.jpg" alt="">
+                        <img src="assets/img/slide1.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide2.jpg" alt="">
+                        <img src="assets/img/slide2.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide3.jpg" alt="">
+                        <img
+                            src="assets/img/slide3.jpg"
+                            alt=""
+                            style="width: 100%"
+                        />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide4.jpg" alt="">
+                        <img src="assets/img/slide4.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide5.jpg" alt="">
+                        <img src="assets/img/slide5.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide6.jpg" alt="">
+                        <img src="assets/img/slide6.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide7.jpg" alt="">
+                        <img src="assets/img/slide7.jpg" alt="" />
                     </div>
                     <div class="slide">
-                        <img src="assets/img/slide8.jpg" alt="">
+                        <img src="assets/img/slide8.jpg" alt="" />
                     </div>
 
                     <div class="nav-auto">
@@ -206,43 +223,602 @@
             </div>
             <!-- End: Slide -->
             <!-- Start: Search -->
-            <div class="search" style="position: absolute; left: 40px; top: 380px;">
+            <div
+                class="search"
+                style="position: absolute; left: 40px; bottom: 150px;"
+            >
                 <div class="search-container">
                     <form>
                         <div class="search-input" id="fixedHeight">
                             <div class="taginput">
                                 <span>
-                                    <input type="text" name="" class="taginput-input" placeholder="Nhập số đơn đặt hàng / truy vấn số vận đơn">
+                                    <input
+                                        type="text"
+                                        name=""
+                                        class="taginput-input"
+                                        placeholder="Nhập số đơn đặt hàng / truy vấn số vận đơn"
+                                    />
                                 </span>
                             </div>
+                            <div class="input-tip">
+                                <span>Tối đa nhập 20 mã vận, mã được cách bởi dấu cách khoảng hoặc dấu phẩy</span>
+                            </div>
                         </div>
-                        <button class="search-btn btn primary" type="submit" style="vertical-align: baseline;">
+                        <button
+                            class="search-btn btn primary"
+                            type="submit"
+                            style="vertical-align: baseline"
+                        >
                             <span>Tra cứu</span>
                         </button>
                     </form>
                 </div>
             </div>
             <!-- End: Search -->
-            <!-- Start: Wrap -->
-            <div class="wrap" style="position: absolute; left: 0px; top: 550px;">
-                <div class="wrap-services">
-                    <a href="/shipping#/single" class="link">
-                        <img class="services-icon" width="64" height="34" src="assets/img/services_icon1.png" alt="">
-                        Tạo đơn & Pick up 
+            <!-- Start: Services -->
+            <div
+                class="wrap-services"
+                style="position: absolute; left: 0px; top: 550px"
+            >
+                <div class="services">
+                    <a href="/shipping#/single" class="services-link">
+                        <img
+                            class="services-icon"
+                            width="64"
+                            height="34"
+                            src="assets/img/services_icon1.png"
+                            alt=""
+                        />
+                        Tạo đơn & Pick up
                     </a>
-                    <a href="/fee" class="link">
-                        <img class="services-icon" width="64" height="34" src="assets/img/services_icon2.png" alt="">
+                    <a href="/fee" class="services-link">
+                        <img
+                            class="services-icon"
+                            width="64"
+                            height="34"
+                            src="assets/img/services_icon2.png"
+                            alt=""
+                        />
                         Cước phí dự tính
                     </a>
-                    <a href="/sitequery" class="link">
-                        <img class="services-icon" width="64" height="34" src="assets/img/services_icon3.png" alt="">
-                        Tìm kiếm bưu cục 
+                    <a href="/sitequery" class="services-link">
+                        <img
+                            class="services-icon"
+                            width="64"
+                            height="34"
+                            src="assets/img/services_icon3.png"
+                            alt=""
+                        />
+                        Tìm kiếm bưu cục
                     </a>
                 </div>
             </div>
-            <!-- End: Wrap -->
+            <!-- End: Services -->
+            <!-- Start: Content -->
+            <div
+                class="content__container"
+                style="
+                    position: absolute;
+                    width: 55%;
+                    top: 720px;
+                    left: 130px;
+                    margin-left: calc(50% - 640px);
+                "
+            >
+                <!-- Start: About Express -->
+                <div class="about__express">
+                    <div class="about__express-content">
+                        <div class="about__express-text">
+                            <div class="about__express-text-title">
+                                <h4>VỀ BEST INC.</h4>
+                            </div>
+                            <div class="about__express-desc">
+                                <p style="line-height: 18px">
+                                    Được thành lập từ năm 2007, Best Inc (NYSE:
+                                    BEST) là nhà cung cấp hàng đầu về dịch vụ
+                                    logistics và chuỗi cung ứng thông minh toàn
+                                    cầu. Thông qua nền tảng công nghệ độc quyền
+                                    và mạng lưới rộng khắp, Best mang đến các
+                                    dịch vụ logistics và dịch vụ gia tăng đa
+                                    dạng, bao gồm quản lý chuỗi cung ứng, dịch
+                                    vụ xe tải và dịch vụ giao hàng quốc tế. Sứ
+                                    mệnh của Best là Trao quyền làm chủ và Làm
+                                    giàu cuộc sống bằng việc ứng dụng công nghệ
+                                    và đổi mới mô hình kinh doanh để tạo ra một
+                                    chuỗi cung ứng thông minh hơn, hiệu quả hơn
+                                </p>
+                                <p>
+                                    Với lợi thế xuất thân từ ngành công nghệ
+                                    thông tin và có đội ngũ nhân lực công nghệ
+                                    thông tin tinh nhuệ, BEST Inc. đã tạo ra một
+                                    nền tảng dịch vụ chuỗi cung ứng hiệu quả nhờ
+                                    ứng dụng các công nghệ tiên tiến vào quản lý
+                                    và vận hành. Bằng việc tăng cường ứng dụng
+                                    công nghệ tự động hóa vào hoạt động, BEST
+                                    Inc. đang không ngừng hoàn thiện mọi trải
+                                    nghiệm của khách hàng và ngày càng nâng cao
+                                    chất lượng dịch vụ.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__express-img">
+                            <img
+                                class="about__express-img-link"
+                                src="assets/img/best_inc.png"
+                                style="height: 200px; width: 340px"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="about__express-video">
+                        <video
+                            controls
+                            poster="assets/img/poster_vid.JPG"
+                            src="assets/vid/video1.mp4"
+                            style="height: 480px; width: 720px"
+                        ></video>
+                    </div>
+                    <p>
+                        Ngày 20/9/2017, BEST Inc. chính thức niêm yết cổ phiếu
+                        của trên sàn chứng khoán New York, Hoa Kỳ (NYSE: BEST),
+                        tạo nên bước phát triển vượt bậc cho tập đoàn. Đến nay,
+                        tập đoàn BEST Inc. đã phát triển dịch vụ tại 17 quốc gia
+                        trên toàn thế giới.
+                    </p>
+                    <p>
+                        Tại Việt Nam, tập đoàn Best inc triển khai 2 dịch vụ:
+                        Dịch vụ chuyển phát nhanh Best Express và Mô hình nhượng
+                        quyền bưu cục Best Express.
+                    </p>
+                </div>
+                <!-- End: About Express -->
+                <!-- Start: Milestones -->
+                <div class="milestones" style="margin-top: 40px">
+                    <div class="milestones-title">
+                        Cột mốc phát triển của BEST Inc.
+                    </div>
+                    <div class="milestones-img">
+                        <img src="assets/img/img1.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- End: Milestones -->
+                <!-- Start: BEST Inc services -->
+                <div class="best-inc_services" style="margin-top: 30px">
+                    <div class="best-inc_services-title">
+                        Các dịch vụ của BEST Inc.
+                    </div>
+                    <div class="best-inc_services-desc">
+                        <p>
+                            Nhằm tối ưu hóa trải nghiệm của người dùng, BEST Inc
+                            tạo ra một hệ sinh thái đa dạng, hỗ trợ tối đa mọi
+                            nhu cầu của khách hàng với 7 loại hình dịch vụ:
+                        </p>
+                        <ul class="list-services">
+                            <li>
+                                <p>
+                                    Chuyển phát nhanh (Best Express): xử lý hàng
+                                    triệu đơn hàng mỗi ngày bao gồm dịch vụ giao
+                                    hàng nhanh và các phương thức thanh toán
+                                    linh hoạt COD, bằng chứng giao hàng POD và
+                                    khai giá bảo hiểm
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dịch vụ vận chuyển hàng hóa (Best Freight):
+                                    dịch vụ vận chuyển hàng hóa đầu cho phép vận
+                                    chuyển hàng lẻ (LTL) và vận chuyển hàng đầy
+                                    xe (FTL) giao hàng tận nơi bằng xe tải
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Chuỗi cung ứng thông minh (Best Supply
+                                    Chain): dịch vụ chuỗi cung ứng thông minh
+                                    3PL hàng đầu
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Nền tảng điện toán lưu trữ thông tin (Best
+                                    Cloud): nền tảng điện toán độc quyền để hỗ
+                                    trợ quản lý đơn hàng
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dịch vụ hậu cần thương mại điện tử (Best
+                                    Global): có mặt tại 15 quốc gia và vùng lãnh
+                                    thổ khắp Bắc Mỹ, Châu Âu và Châu Á
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dịch vụ xe tải (Best Ucargo) : ứng dụng cung
+                                    cấp dịch vụ xe tải
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Dịch vụ tài chính (Best Capital): dịch vụ
+                                    tài chính hỗ trợ cho hệ sinh thái BEST’s eco
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="best-inc_services-img">
+                        <img src="assets/img/img2.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- End: BEST Inc services -->
+            </div>
+            <!-- End: Content -->
+            <!-- Start: News -->
+            <section
+                class="wrap-news"
+                style="position: absolute; top: 3250px; width: 100%"
+            >
+                <div class="simple__news">
+                    <div class="simple__news-header">
+                        <h3 class="news">
+                            <span>News</span>
+                        </h3>
+                        <a href="pages/News/index_New.html" class="more">
+                            <span>More</span>
+                            <img
+                                src="assets/img/more.png"
+                                alt=""
+                                class="more-arrow"
+                            />
+                        </a>
+                    </div>
+                    <ul class="simple__news-list">
+                        <li class="news__card">
+                            <a href="" target="_blank" class="card-link">
+                                <img
+                                    class="card-img"
+                                    src="assets/img/card1.jpg"
+                                    alt=""
+                                />
+                                <div class="card-content">
+                                    <div
+                                        class="card-title"
+                                        style="
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                        "
+                                    >
+                                        Hành trình ‘Cơm no đến trường’ thành
+                                        công nhờ nhiều yếu tố
+                                    </div>
+                                    <div
+                                        class="card-desc"
+                                        style="
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                            display: -webkit-box;
+                                            -webkit-box-orient: vertical;
+                                            -webkit-line-clamp: 2;
+                                        "
+                                    >
+                                        Hành trình “Cơm no đến trường” do BEST
+                                        Express triển khai tại các tỉnh Đồng
+                                        bằng sông Cửu Long đã khép lại với nhiều
+                                        thành công
+                                    </div>
+                                    <div class="card-detail">
+                                        <div>
+                                            <span>Read more</span>
+                                        </div>
+                                        <img
+                                            src="assets/img/more.png"
+                                            class="detail-arrow"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__card">
+                            <a href="" target="_blank" class="card-link">
+                                <img
+                                    class="card-img"
+                                    src="assets/img/card2.jpg"
+                                    alt=""
+                                />
+                                <div class="card-content">
+                                    <div
+                                        class="card-title"
+                                        style="
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                        "
+                                    >
+                                        Vượt 700 km đưa gạo đến với trẻ nghèo
+                                        ĐBSCL
+                                    </div>
+                                    <div
+                                        class="card-desc"
+                                        style="
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                            display: -webkit-box;
+                                            -webkit-box-orient: vertical;
+                                            -webkit-line-clamp: 2;
+                                        "
+                                    >
+                                        Nhờ mạng lưới dịch vụ rộng khắp 63 tỉnh,
+                                        thành toàn quốc, BEST Express đã gấp rút
+                                        tổ chức hành trình “Cơm no đến trường”
+                                        tại 6 tỉnh miền Tây Nam Bộ
+                                    </div>
+                                    <div class="card-detail">
+                                        <div>
+                                            <span>Read more</span>
+                                        </div>
+                                        <img
+                                            src="assets/img/more.png"
+                                            class="detail-arrow"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__card">
+                            <a href="" target="_blank" class="card-link">
+                                <img
+                                    class="card-img"
+                                    src="assets/img/card3.jpg"
+                                    alt=""
+                                />
+                                <div class="card-content">
+                                    <div
+                                        class="card-title"
+                                        style="
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                        "
+                                    >
+                                        BEST Express kết thúc hành trình ‘Cơm no
+                                        đến trường’ phía Nam
+                                    </div>
+                                    <div
+                                        class="card-desc"
+                                        style="
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                            display: -webkit-box;
+                                            -webkit-box-orient: vertical;
+                                            -webkit-line-clamp: 2;
+                                        "
+                                    >
+                                        BEST Express tạm khép lại cuộc hành
+                                        trình tại miền Nam, nhưng sẽ sớm mở rộng
+                                        hành trình đến các khu vực khác giúp các
+                                        em học sinh và bà con tại nhiều tỉnh,
+                                        thành trên khắp cả nước
+                                    </div>
+                                    <div class="card-detail">
+                                        <div>
+                                            <span>Read more</span>
+                                        </div>
+                                        <img
+                                            src="assets/img/more.png"
+                                            class="detail-arrow"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__card">
+                            <a href="" target="_blank" class="card-link">
+                                <img
+                                    class="card-img"
+                                    src="assets/img/card3.jpg"
+                                    alt=""
+                                />
+                                <div class="card-content">
+                                    <div
+                                        class="card-title"
+                                        style="
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                        "
+                                    >
+                                        6 anh em mồ côi mẹ theo đuổi ước mơ tri
+                                        thức
+                                    </div>
+                                    <div
+                                        class="card-desc"
+                                        style="
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+                                            display: -webkit-box;
+                                            -webkit-box-orient: vertical;
+                                            -webkit-line-clamp: 2;
+                                        "
+                                    >
+                                        BEST sau khi kết thúc hành trình tại Cà
+                                        Mau, nắm được xã Tân Phú Trung, huyện Củ
+                                        Chi có các trường hợp khó khăn cần giúp
+                                        đỡ. Khi quay về TP.HCM đã tiếp tục hành
+                                        trình "Cơm no đến trường" tại huyện Củ
+                                        Chi
+                                    </div>
+                                    <div class="card-detail">
+                                        <div>
+                                            <span>Read more</span>
+                                        </div>
+                                        <img
+                                            src="assets/img/more.png"
+                                            class="detail-arrow"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- End: News -->
         </main>
-        <footer></footer>
+        <footer style="background-color: #082a4a; margin-top: 30px; position: relative; top: 3200px;">
+            <div class="footer-main">
+                <div class="footer-table">
+                    <div class="footer-col" style="width: 321px">
+                        <p>
+                            <img
+                                style="height: 28px"
+                                src="assets/img/footer_1.png"
+                                alt=""
+                            />
+                        </p>
+                        <p></p>
+                        <p>
+                            <span
+                                >BEST Express được cung cấp bởi Công ty
+                                TNHH</span
+                            >
+                        </p>
+                        <p>
+                            <span
+                                >Vinacapital Việt Nam - Một công ty được thành
+                                lập và hoạt động theo pháp luật Việt Nam từ năm
+                                2013.
+                            </span>
+                        </p>
+                        <p></p>
+                        <p></p>
+                        <p>
+                            <span
+                                >Giấy CNĐKKD: 0315 404 542 – cấp ngày 22/11/2018
+                                bởi Phòng Đăng ký kinh doanh - Sở kế hoạch & đầu
+                                tư TP.HCM. Đăng ký thay đổi lần thứ 5 ngày 26
+                                tháng 06 năm 2020.
+                            </span>
+                        </p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p><span>Copyright © 2020 </span></p>
+                    </div>
+                    <div class="footer-col" style="width: 256px">
+                        <p><strong>Địa chỉ</strong></p>
+                        <p></p>
+                        <p>
+                            <span
+                                >Lầu 21, Tháp A2, Tòa nhà Viettel, 285
+                                Cách</span
+                            >
+                        </p>
+                        <p><span>Mạng Tháng Tám, Phường 12, Quận 10, </span></p>
+                        <p><span>TPHCM, Việt Nam.</span></p>
+                        <p></p>
+                        <p></p>
+                        <p>
+                            <img
+                                style="height: 45.4px"
+                                src="assets/img/footer_2.png"
+                                alt=""
+                            />
+                        </p>
+                    </div>
+                    <div class="footer-col" style="width: 228px">
+                        <p><strong>Liên hệ</strong></p>
+                        <p></p>
+                        <p>
+                            <span style="font-weight: 700"
+                                >Bộ phận chăm sóc khách hàng</span
+                            >
+                        </p>
+                        <p>
+                            <span
+                                >Email:
+                                <a style="color: #fff" href=""
+                                    >cskh@best-inc.com</a
+                                ></span
+                            >
+                        </p>
+                        <p><span>Hotline: 1900 1031 </span></p>
+                        <p></p>
+                        <p>
+                            <span style="font-weight: 700"
+                                >Bộ phận Marketing/ Nhượng quyền
+                            </span>
+                        </p>
+                        <p></p>
+                        <p><span style="font-weight: 700">Bưu cục</span></p>
+                        <p><span>Email: mkt-vn-sns@best-inc.com </span></p>
+                        <p></p>
+                        <p><span>ĐT: (028) 730 86998/ Máy lẻ: 21020</span></p>
+                        <p></p>
+                        <p>
+                            <span style="font-weight: 700"
+                                >Bộ phận Business Development
+                            </span>
+                        </p>
+                        <p><span>ĐT: (028) 730 86998/ Máy lẻ: 21020</span></p>
+                    </div>
+                    <div class="footer-col" style="width: 255px">
+                        <p><strong>Kết nối với chúng tôi</strong></p>
+                        <p></p>
+                        <p>
+                            <a
+                                href="https://www.facebook.com/bestexpressvietnam"
+                                ><img src="assets/img/footer_fb.png" alt=""
+                            /></a>
+                            <a
+                                href="https://www.youtube.com/channel/UCVF_TEOmc2kStmhVzWye_zw"
+                                ><img
+                                    src="assets/img/footer_ytb.png"
+                                    alt=""
+                            /></a>
+                            <a href="https://www.zalo.me/1170691930162133833"
+                                ><img
+                                    src="assets/img/footer_zl.png"
+                                    alt=""
+                            /></a>
+                            <a
+                                href="https://www.instagram.com/bestexpressvietnam/"
+                                ><img
+                                    src="assets/img/footer_ins.png"
+                                    alt=""
+                            /></a>
+                        </p>
+                        <p></p>
+                        <p></p>
+                        <p>
+                            <span
+                                >BEST VN: Dịch vụ được cung cấp bởi Best Việt
+                                Nam.
+                            </span>
+                        </p>
+                        <p></p>
+                        <p>
+                            <span
+                                >DC,SC: Dịch vụ được cung cấp bởi
+                                Vinacapital</span
+                            >
+                        </p>
+                        <p><span>Việt Nam</span></p>
+                        <p></p>
+                        <p>
+                            <span
+                                >FS: Dịch vụ được cung cấp bởi các đơn vị nhận
+                                Nhượng quyền thương mại.</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- JS -->
         <script src="assets/js/script.js"></script>
         <script src="assets/js/script_index.js"></script>

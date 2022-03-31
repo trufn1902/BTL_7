@@ -1,0 +1,32 @@
+.imgcontact{
+    display: flex;
+    width: 88%;
+    height: 495px;
+    margin: auto;
+}
+
+.linkcontact{
+    padding-top: 40px;
+}
+
+table{
+    margin: auto;
+}
+
+.contact h4{
+    color: #E20726;
+    font-size: 18px;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 5px;
+}
+
+.contact h5{
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 5px;
+}
+
+.imgmap{
+    width: 100%;
+    padding-top: 70px;
+}

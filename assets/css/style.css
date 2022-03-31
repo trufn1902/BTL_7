@@ -6,11 +6,6 @@
     font-family: "Roboto", sans-serif, "Microsoft YaHei";
 }
 
-body {
-    min-width: 1280px;
-    text-rendering: optimizeLegibility;
-    background: #fff !important;
-}
 /* ========== */
 
 /* Css for Header */
@@ -33,6 +28,11 @@ body {
     min-width: 1280px;
 }
 
+.styred,
+.styred .sub-item-style {
+    background: rgba(226, 7, 38, 0.88);
+}
+
 .content {
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@ body {
     padding: 0 51px 0 9px;
 }
 
-img{
+img {
     border: none;
     vertical-align: middle;
 }
@@ -57,7 +57,7 @@ img{
     width: 732px;
 }
 
-nav{
+nav {
     display: block;
 }
 
@@ -75,7 +75,6 @@ ul {
 li {
     display: list-item;
 }
-
 
 .nav-item {
     margin-left: 35px;
@@ -104,7 +103,8 @@ li {
     padding-bottom: 22px;
 }
 
-.nav-link::after, .nav-link::before{
+.nav-link::after,
+.nav-link::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -113,7 +113,7 @@ li {
     height: 4px;
     background: #e80023;
     background: #fff;
-    transition: width .2s ease-out;
+    transition: width 0.2s ease-out;
 }
 
 .nav-link:before {
@@ -124,13 +124,13 @@ li {
 .nav-link::after {
     left: 50%;
 }
+
 .item-link-effect.itementer .nav-link::before,
-.item-link-effect.itementer .nav-link::after
- {
+.item-link-effect.itementer .nav-link::after {
     width: 50%;
 }
 
-.sub-item{
+.sub-item {
     position: absolute;
     display: none;
     top: 70px;
@@ -147,20 +147,20 @@ li {
 
 .sub-item-style:hover {
     color: #e20726;
-    background: hsla(0,0%,100%,.88);
+    background: hsla(0, 0%, 100%, 0.88);
 }
 
-.sub-item-style{
+.sub-item-style {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
     display: block;
-    background: rgba(226,7,38,.88);
+    background: rgba(226, 7, 38, 0.88);
     padding: 10px 15px;
     font-size: 12px;
 }
 
-.nav-item:hover .sub-item{
+.nav-item:hover .sub-item {
     display: block;
 }
 
@@ -173,35 +173,33 @@ li {
     justify-content: flex-end;
 }
 
-.fa-angle-down{
+.fa-angle-down {
     font-size: 12px;
     margin-left: 7px;
-    transition: all .3s;
+    transition: all 0.3s;
     transform-origin: center center;
     display: inline-block;
     vertical-align: middle;
     font-style: normal;
 }
 
-.uname{
+.uname {
     box-sizing: border-box;
     padding-left: 26px;
     color: #fff;
     flex: 0 0 auto;
 }
 
-.uimg{
+.uimg {
     width: 27px;
     height: 27px;
     margin-right: 13px;
     vertical-align: middle;
 }
 
-
-
 /* ========== */
+/* CSS for Footer */
 
-/* css for footer */
 footer{
     height: 430px;
     width: 100%;
