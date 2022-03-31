@@ -1,4 +1,4 @@
-*{
+* {
     font-family: "Roboto", sans-serif, "Microsoft YaHei";
 }
 
@@ -183,10 +183,8 @@ form {
     margin-top: 0em;
 }
 
-.search-input {
-    overflow: hidden;
-    height: 40px;
-    transition: height 0.7s;
+.search-input,
+.search-input-focus {
     box-sizing: border-box;
     width: 310px;
     margin: 1px auto;
@@ -195,7 +193,21 @@ form {
     background-color: #fff;
 }
 
-.taginput {
+.search-input {
+    overflow: hidden;
+    height: 40px;
+    transition: height 0.7s;
+}
+
+.search-input-focus {
+    overflow: hidden;
+    height: 167px;
+    border-color: #e14851;
+    transition:  0.7s;
+}
+
+.taginput,
+.taginput-focus {
     width: 290px;
     min-height: 95px;
     margin: 1px auto;
@@ -216,6 +228,13 @@ form {
     font-size: 13px;
     font-weight: 400;
     color: #777;
+}
+
+.input-tip{
+    padding: 0 15px 20px;
+    font-size: 14px;
+    color: #9dafbd;
+    background-color: transparent;
 }
 
 .btn {
@@ -332,7 +351,7 @@ img {
     padding: 2px 0 6px;
 }
 
-p{
+p {
     font-size: 14px;
     line-height: 24px;
 }
@@ -437,8 +456,8 @@ h3 {
     transition: 0.3s;
 }
 
-.news__card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+.news__card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-link {
@@ -479,7 +498,7 @@ h3 {
     position: relative;
 }
 
-.card-detail::before{
+.card-detail::before {
     content: "";
     position: absolute;
     left: 1px;
@@ -489,7 +508,7 @@ h3 {
     background: #d8d8d8;
 }
 
-.detail-arrow{
+.detail-arrow {
     height: 15px;
     width: 17px;
     margin-right: 4px;
