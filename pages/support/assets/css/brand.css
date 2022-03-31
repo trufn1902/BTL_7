@@ -1,0 +1,28 @@
+.Brand h1{
+    font-weight: 500;
+    margin-top: 72px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h4{
+    color: #4A4A4A;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+}
+
+p{
+    text-transform: uppercase;
+    width: 900px;
+    margin: auto;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+.imgBrand{
+    display: flex;
+    width: 968px;
+    margin: auto;
+}
