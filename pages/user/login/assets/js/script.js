@@ -116,28 +116,29 @@ function checkPass(){
     }
 }
 
-function checkAccount(e){
-    const inputUserID = document.getElementsByName('userID')[0]
-    const inputPassword = document.getElementsByName('password')[0]
-    const statusOfUserID = document.querySelector('.statusOfUserID')
-    const statusOfPass = document.querySelector('.statusOfPassword')
-    const btnSubmit = document.querySelector('.btn-submit')
+// function checkAccount(){
+//     const inputUserID = document.getElementsByName('userID')[0]
+//     const inputPassword = document.getElementsByName('password')[0]
+//     const statusOfUserID = document.querySelector('.statusOfUserID')
+//     const statusOfPass = document.querySelector('.statusOfPassword')
+//     let checkUserName = false
+//     let checkPassword = false
     
-    e.preventDefault()
-    const currentLang = document.querySelector('.active').getAttribute('data-lang')
-    if (inputUserID.value.length == 0){
-        if (currentLang == 'vi')
-            statusOfUserID.textContent = 'Tài khoản không được để trống'
-        else
-            statusOfUserID.textContent = 'Account is required'
-        inputUserID.classList.add('has-error')
-    }
+//     event.preventDefault()
+//     const currentLang = document.querySelector('.active').getAttribute('data-lang')
+//     if (inputUserID.value.length == 0){
+//         if (currentLang == 'vi')
+//             statusOfUserID.textContent = 'Tài khoản không được để trống'
+//         else
+//             statusOfUserID.textContent = 'Account is required'
+//         inputUserID.classList.add('has-error')
+//     }
 
-    if (inputPassword.value.length == 0){
-        if (currentLang == 'vi')
-            statusOfPass.textContent = 'Mật khẩu không được để trống'
-        else
-            statusOfPass.textContent = 'Password is required'
-        inputPassword.classList.add('has-error')
-    }
-}
+//     if (inputPassword.value.length == 0){
+//         if (currentLang == 'vi')
+//             statusOfPass.textContent = 'Mật khẩu không được để trống'
+//         else
+//             statusOfPass.textContent = 'Password is required'
+//         inputPassword.classList.add('has-error')
+//     }
+// }
