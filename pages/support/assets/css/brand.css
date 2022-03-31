@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-h4{
+.Brand h4{
     color: #4A4A4A;
     font-weight: normal;
     font-size: 14px;
@@ -13,7 +13,7 @@ h4{
     line-height: 30px;
 }
 
-p{
+.Brand p{
     text-transform: uppercase;
     width: 900px;
     margin: auto;
