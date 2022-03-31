@@ -1,3 +1,14 @@
+* {
+    font-family: "Roboto", sans-serif, "Microsoft YaHei";
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+    text-rendering: optimizeLegibility;
+    background: #fff !important;
+}
+
 main {
     /* display: flex; */
     justify-content: center;
@@ -172,10 +183,8 @@ form {
     margin-top: 0em;
 }
 
-.search-input {
-    overflow: hidden;
-    height: 40px;
-    transition: height 0.7s;
+.search-input,
+.search-input-focus {
     box-sizing: border-box;
     width: 310px;
     margin: 1px auto;
@@ -184,7 +193,21 @@ form {
     background-color: #fff;
 }
 
-.taginput {
+.search-input {
+    overflow: hidden;
+    height: 40px;
+    transition: height 0.7s;
+}
+
+.search-input-focus {
+    overflow: hidden;
+    height: 167px;
+    border-color: #e14851;
+    transition:  0.7s;
+}
+
+.taginput,
+.taginput-focus {
     width: 290px;
     min-height: 95px;
     margin: 1px auto;
@@ -205,6 +228,13 @@ form {
     font-size: 13px;
     font-weight: 400;
     color: #777;
+}
+
+.input-tip{
+    padding: 0 15px 20px;
+    font-size: 14px;
+    color: #9dafbd;
+    background-color: transparent;
 }
 
 .btn {
@@ -302,16 +332,16 @@ img {
     vertical-align: middle;
 }
 
-.express__about-content {
+.about__express-content {
     display: flex;
 }
 
-.express__about-text {
+.about__express-text {
     flex-grow: 1;
     padding-right: 51px;
 }
 
-.express__about-text-title {
+.about__express-text-title {
     border-bottom: 1px solid #979797;
     margin-bottom: 14px;
     color: #e20726;
@@ -322,16 +352,11 @@ img {
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-size: 14px;
     line-height: 24px;
 }
 
-.express__about-img-link {
+.about__express-img-link {
     flex-grow: 1;
     display: block;
     flex-shrink: 0;
@@ -341,7 +366,7 @@ img {
     vertical-align: middle;
 }
 
-.express__about-video {
+.about__express-video {
     display: flex;
     justify-content: center;
 }
@@ -431,8 +456,8 @@ h3 {
     transition: 0.3s;
 }
 
-.news__card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+.news__card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-link {
@@ -473,7 +498,7 @@ h3 {
     position: relative;
 }
 
-.card-detail::before{
+.card-detail::before {
     content: "";
     position: absolute;
     left: 1px;
@@ -483,7 +508,7 @@ h3 {
     background: #d8d8d8;
 }
 
-.detail-arrow{
+.detail-arrow {
     height: 15px;
     width: 17px;
     margin-right: 4px;

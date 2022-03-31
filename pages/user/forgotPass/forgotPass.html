@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../../../assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Retrieve password</title>
+    </head>
+    <body style="overflow-x: hidden">
+        <header class="header-container styred">
+            <div class="content">
+                <a
+                    href="../../../index.html"
+                    id="homeLogo"
+                    class="header-img-link"
+                >
+                    <img
+                        src="../../../assets/img/logo.png"
+                        alt=""
+                        class="header-img"
+                    />
+                </a>
+                <div class="left">
+                    <nav>
+                        <ul class="nav-container">
+                            <li class="nav-item item-link-effect">
+                                <a
+                                    href="../../../index.html"
+                                    class="item-style nav-link link-active"
+                                    >Trang chủ</a
+                                >
+                            </li>
+                            <li class="nav-item item-link-effect">
+                                <a
+                                    href="../../BEST Express/about_express/about_express.html"
+                                    class="item-style nav-link"
+                                    >BEST Express</a
+                                >
+                                <ul class="sub-item">
+                                    <li>
+                                        <a
+                                            href="../../BEST Express/about_express/about_express.html"
+                                            class="sub-item-style"
+                                            >Về BEST Express</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="../../BEST Express/resolve/resolve.html"
+                                            class="sub-item-style"
+                                            >Giải quyết khiếu nại</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="../../BEST Express/forbidden/forbidden.html"
+                                            class="sub-item-style"
+                                            >Hàng cấm gửi</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item item-link-effect">
+                                <a href="" class="item-style nav-link"
+                                    >Nhượng quyền</a
+                                >
+                                <ul class="sub-item">
+                                    <li>
+                                        <a href="" class="sub-item-style"
+                                            >Nhượng quyền Bưu cục</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="sub-item-style"
+                                            >Đăng ký nhượng quyền</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item item-link-effect">
+                                <a href="" class="item-style nav-link"
+                                    >Hỗ trợ</a
+                                >
+                                <ul class="sub-item">
+                                    <li>
+                                        <a href="" class="sub-item-style"
+                                            >Thông tin liên hệ</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="sub-item-style"
+                                            >Câu hỏi thường gặp</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="sub-item-style"
+                                            >Điều kiện - Điều khoản</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="sub-item-style"
+                                            >Chính sách Nhận diện nhãn hiệu</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item item-link-effect">
+                                <a href="" class="item-style nav-link"
+                                    >Tạo đơn</a
+                                >
+                            </li>
+                            <li class="nav-item item-link-effect">
+                                <a href="" class="item-style nav-link"
+                                    >Tin tức</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right">
+                    <div class="nav-item">
+                        <span class="item-style nav-link">
+                            <span></span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                        <ul class="sub-item">
+                            <li data-lang="vi">
+                                <span class="sub-item-style">VI</span>
+                            </li>
+                            <li data-lang="en">
+                                <span class="sub-item-style">EN</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uname">
+                        <a href="../login/login.html" class="item-style">
+                            <img
+                                class="uimg"
+                                src="../../../assets/img/login.png"
+                                alt=""
+                            />
+                            <span>Đăng nhập</span>
+                        </a>
+                        <span style="margin: 0px 13px">|</span>
+                        <a
+                            href="../register/register.html"
+                            id="homePageRegister"
+                            class="item-style"
+                        >
+                            <span>Đăng ký thông tin tài khoản mới</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content-container">
+                <h2 class="title">Lấy lại mật khẩu</h2>
+                <div>
+                    <!-- Start: Steps -->
+                    <div class="steps">
+                        <div class="step" data-index="1">
+                            <span class="step-cont active">
+                                <span class="step-index">01</span>
+                                <span>Cung cấp thông tin</span>
+                            </span>
+                        </div>
+                        <div class="step" data-index="2">
+                            <span class="step-cont">
+                                <span class="step-index">02</span>
+                                <span>Tài khoản đã tạo</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- End: Steps -->
+                    <!-- Start: Wrap -->
+                    <div class="wrap">
+                        <div class="wrap-form">
+                            <form action="" class="form" novalidate>
+                                <br />
+                                <br />
+                                <div class="phone-number">
+                                    <label for="phone" class="label">
+                                        <span class="required"></span>
+                                        <span>Số điện thoại</span>
+                                    </label>
+                                    <div class="input-wrap">
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            id="phone"
+                                            placeholder="Số điện thoại"
+                                            class="input inputlg clearable"
+                                            oninput="checkPhoneNumber()"
+                                        />
+                                        <i
+                                            class="fa-solid fa-xmark clear clearPhone hidden"
+                                        ></i>
+                                    </div>
+                                    <div
+                                        class="error statusOfPhone"
+                                        style="min-height: 20px"
+                                    ></div>
+                                </div>
+                                <div class="verify-code">
+                                    <label for="code" class="label">
+                                        <span class="required"></span>
+                                        <span>Mã xác minh</span>
+                                    </label>
+                                    <div class="captcha">
+                                        <input
+                                            type="text"
+                                            name="code"
+                                            id="code"
+                                            placeholder="Mã xác minh"
+                                            class="input inputlg"
+                                            maxlength="6"
+                                            onkeypress="return isNumber(event)"
+                                            oninput="checkCode()"
+                                        />
+                                        <div class="btn-captcha-wrap">
+                                            <button
+                                                type="button"
+                                                style="vertical-align: baseline"
+                                                class="btn-captcha asDisabled btn"
+                                            >
+                                                Nhận mã
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="error statusOfCode"
+                                        style="min-height: 20px"
+                                    ></div>
+                                </div>
+                                <div class="password">
+                                    <label for="password" class="label">
+                                        <span class="required"></span>
+                                        <span>Mật khẩu</span>
+                                    </label>
+                                    <div class="input-wrap">
+                                        <input
+                                            type="password"
+                                            name="password"
+                                            id="password"
+                                            placeholder="Mật khẩu"
+                                            autocomplete="new-password"
+                                            class="input inputlg revealable"
+                                            oninput="checkPass()"
+                                        />
+                                        <i
+                                            class="fa-solid fa-eye-slash eye"
+                                            onclick="togglePass()"
+                                        ></i>
+                                        <i
+                                            class="fa-solid fa-eye eye hidden"
+                                            onclick="togglePass()"
+                                        ></i>
+                                    </div>
+                                    <div
+                                        style="
+                                            color: #9b9b9b;
+                                            font-size: 12px;
+                                            margin: 5px 0;
+                                        "
+                                    >
+                                        <img
+                                            src="assets/img/required.png"
+                                            alt=""
+                                            class="required-icon"
+                                        />
+                                        <span class="required-text"
+                                            >Ít nhất 6 kí tự, bắt buộc gồm số và
+                                            chữ cái</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="error statusOfPass"
+                                        style="min-height: 20px"
+                                    ></div>
+                                </div>
+                                <div class="submit">
+                                    <button
+                                        class="btn btn-submit"
+                                        type="submit"
+                                        style="vertical-align: baseline"
+                                        onclick="btnSubmit(event)"
+                                    >
+                                        <span>Gửi đi</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="wrap-links">
+                            <p>
+                                <a href="../login/login.html" class="btn link">
+                                    <span style="margin-right: 5px">></span>
+                                    <span>Đăng nhập tài khoản? Đăng nhập</span>
+                                </a>
+                            </p>
+                            <div class="qrcodes">
+                                <div class="apps">
+                                    <div class="app">
+                                        <img
+                                            src="assets/img/qr_IOS.png"
+                                            class="app-qrcode"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="assets/img/iphone.png"
+                                            class="iphone"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="app">
+                                        <img
+                                            src="assets/img/qr_ANDR.png"
+                                            class="app-qrcode"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="assets/img/android.png"
+                                            class="android"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="app-qr-tip">
+                                        <span>scanAppQrTip</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyr">
+                        <span style="color: #7f8488; font-size: 12px"
+                            >Copyright © 2021</span
+                        >
+                    </div>
+                    <!-- End: Wrap -->
+                </div>
+            </div>
+        </main>
+        <!-- JS -->
+        <script src="../../../assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

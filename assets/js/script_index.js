@@ -35,3 +35,18 @@ services.forEach(service =>{
         service.children[0].src = src1
     })
 })
+
+// Search
+const search = document.querySelector('.taginput-input')
+const searchInput = document.querySelector('.search-input')
+const tagInput = document.querySelector('.taginput')
+
+search.addEventListener('focus', () =>{
+    searchInput.className = 'search-input-focus'
+    tagInput.className = 'taginput-focus'
+})
+
+search.addEventListener('focusout', () =>{
+    searchInput.className = 'search-input'
+    tagInput.className = 'taginput'
+})
