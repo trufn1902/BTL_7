@@ -19,10 +19,10 @@
 
 .col{
   display: flex;
-  border: 1px solid black;
+  border: 1px solid gray;
   width: 20%;
   margin-left: 60px;
-  background-color: pink
+  box-shadow: 1px 1px 1px 1px gray;
 }
 
 .money .col-1{
@@ -106,7 +106,7 @@ form{
   /* position: relative; */
   box-shadow: 5px 5px 10px 5px gray;
   margin: auto;
-  background-color: rgb(167, 244, 218);
+  background-color: rgb(192, 255, 234);
 }
 
 #addnew .row{
@@ -147,4 +147,8 @@ form{
 
 #collection{
   display: block;
+}
+
+body{
+  background-color:rgb(255, 241, 218);
 }

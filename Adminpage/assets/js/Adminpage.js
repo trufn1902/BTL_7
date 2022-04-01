@@ -56,19 +56,6 @@ function delivery(){
     contentlist.innerHTML = Expressdelivery.join("");
 }
 
-var morenew = document.querySelector("#morenew")
-var isMorenew = false;
-morenew.addEventListener("click", () => {
-  isMorenew = !isMorenew;
-  if (isMorenew) {
-    addnew.classList.remove("form");
-    addnew.classList.add("noform");
-  } else {
-    addnew.classList.remove("noform");
-    addnew.classList.add("form");
-  }
-});
-
 //Add
 inputCode = document.querySelector("input[name=code]");
 inputPhoneNumber = document.querySelector("input[name=phonenumber]");
@@ -225,10 +212,12 @@ setInterval(() =>{
     }
 }, 1)
 
+//delete
 function deleteadd(stt){
     arr = arr.filter(ord => ord.stt != stt )
     delivery()
 }
+
 //Edit
 let sttedit
 
@@ -245,11 +234,6 @@ function editadd(stt){
     inputFreight.value = orderedit.freight
     inputComeback.value = orderedit.comeback
     inputIndemnify.value = orderedit.indemnify
-    isMorenew = true;
-    if (isMorenew) {
-        addnew.classList.remove("form");
-        addnew.classList.add("noform");
-    } 
     const editOrder = document.getElementById("edit")
     editOrder.disabled = false;
 }
