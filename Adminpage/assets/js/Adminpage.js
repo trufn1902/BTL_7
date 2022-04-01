@@ -69,7 +69,7 @@ morenew.addEventListener("click", () => {
   }
 });
 
-//thêm
+//Add
 inputCode = document.querySelector("input[name=code]");
 inputPhoneNumber = document.querySelector("input[name=phonenumber]");
 inputOrderValue = document.querySelector("input[name=ordervalue]");
@@ -228,5 +228,51 @@ setInterval(() =>{
 function deleteadd(stt){
     arr = arr.filter(ord => ord.stt != stt )
     delivery()
+}
+
+let sttedit
+
+function editadd(stt){
+    let orderedit = arr.filter(ord => ord.stt == stt)[0]
+ 
+    sttedit = stt
+    inputCode.value = orderedit.code
+    inputPhoneNumber.value = orderedit.phonenumber
+    inputOrderValue.value = orderedit.ordervalue
+    inputDetails.value = orderedit.details
+    inputFreight.value = orderedit.freight
+    inputStatus.value = orderedit.status
+    inputComeback.value = orderedit.comeback
+    inputCollection.value = orderedit.collection
+    inputIndemnify.value = orderedit.indemnify
+    isMorenew = true;
+    if (isMorenew) {
+        addnew.classList.remove("form");
+        addnew.classList.add("noform");
+    } 
+    const editOrder = document.getElementById("edit")
+    editOrder.disabled = false;
+}
+//Edit
+function update(){
+    let newlist = {
+        stt: sttedit,
+        code: inputCode.value ,
+        phonenumber: inputPhoneNumber.value,
+        ordervalue: inputOrderValue.value,
+        details: inputDetails.value,
+        freight: inputFreight.value ,
+        status: inputStatus.value,
+        comeback: inputComeback.value,
+        Collection: inputIndemnify.value,
+        indemnify: inputIndemnify.value,
+    };
+
+    for( let i = 0 ; i < arr.length ; i++){
+        if( arr[i].stt == sttedit){
+            arr[i] = newlist
+        }
+    }
+    delivery();
 }
 delivery();
