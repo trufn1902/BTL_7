@@ -22,6 +22,7 @@
   border: 1px solid black;
   width: 20%;
   margin-left: 60px;
+  background-color: pink
 }
 
 .money .col-1{
@@ -105,6 +106,7 @@ form{
   /* position: relative; */
   box-shadow: 5px 5px 10px 5px gray;
   margin: auto;
+  background-color: rgb(167, 244, 218);
 }
 
 #addnew .row{

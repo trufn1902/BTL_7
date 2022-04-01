@@ -90,10 +90,10 @@ add.addEventListener("click", (e) => {
       phonenumber: inputPhoneNumber.value,
       ordervalue: inputOrderValue.value,
       details: inputDetails.value,
-      freight: inputFreight.value,
-      status: inputStatus.value,
-      comeback: inputComeback.value,
       collection: inputCollection.value,
+      status: inputStatus.value,
+      freight: inputFreight.value,
+      comeback: inputComeback.value,
       indemnify: inputIndemnify.value,  
     };
   
@@ -229,7 +229,7 @@ function deleteadd(stt){
     arr = arr.filter(ord => ord.stt != stt )
     delivery()
 }
-
+//Edit
 let sttedit
 
 function editadd(stt){
@@ -240,10 +240,10 @@ function editadd(stt){
     inputPhoneNumber.value = orderedit.phonenumber
     inputOrderValue.value = orderedit.ordervalue
     inputDetails.value = orderedit.details
-    inputFreight.value = orderedit.freight
-    inputStatus.value = orderedit.status
-    inputComeback.value = orderedit.comeback
     inputCollection.value = orderedit.collection
+    inputStatus.value = orderedit.status
+    inputFreight.value = orderedit.freight
+    inputComeback.value = orderedit.comeback
     inputIndemnify.value = orderedit.indemnify
     isMorenew = true;
     if (isMorenew) {
@@ -253,7 +253,7 @@ function editadd(stt){
     const editOrder = document.getElementById("edit")
     editOrder.disabled = false;
 }
-//Edit
+
 function update(){
     let newlist = {
         stt: sttedit,
@@ -261,10 +261,10 @@ function update(){
         phonenumber: inputPhoneNumber.value,
         ordervalue: inputOrderValue.value,
         details: inputDetails.value,
-        freight: inputFreight.value ,
+        collection: inputCollection.value,
         status: inputStatus.value,
+        freight: inputFreight.value ,
         comeback: inputComeback.value,
-        Collection: inputIndemnify.value,
         indemnify: inputIndemnify.value,
     };
 
@@ -275,4 +275,12 @@ function update(){
     }
     delivery();
 }
+
+const editBtn = document.getElementById("edit")
+
+editBtn.addEventListener("click", function(e){
+    e.preventDefault()
+    update()
+})
+
 delivery();
