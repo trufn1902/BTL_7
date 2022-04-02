@@ -37,7 +37,7 @@ function delivery(){
             <td>${ord.phonenumber}</td>
             <td>${ord.ordervalue}</td>
             <td>
-                <a href=""><i class="fa-solid fa-eye"></i></a>
+                <a href="#" onclick="show(this.id)" id="${ord.stt}"><i class="fa-solid fa-eye"></i></a>
             </td>
             <td>${ord.collection}</td>
             <td>${ord.status}</td>
@@ -268,3 +268,8 @@ editBtn.addEventListener("click", function(e){
 })
 
 delivery();
+
+function show(stt){
+    let orderedit = arr.filter(ord => ord.stt == stt)[0]
+    inputDetails.value = orderedit.details
+}

@@ -93,6 +93,7 @@ table{
 
 td{
   text-align: center;
+  font-weight: bold;
 }
 
 h3{
@@ -151,4 +152,8 @@ form{
 
 body{
   background-color:rgb(255, 241, 218);
+}
+
+#morenew{
+  cursor: pointer;
 }
