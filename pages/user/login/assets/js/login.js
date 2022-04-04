@@ -90,9 +90,9 @@ function login(){
     if (userID.value.length != 0 && password.value.length != 0){
         if (val != false){
             if (val.permission == "admin") {
-                location.href = "../../../../../Adminpage/Adminpage.html";
+                location.href = "../../../Adminpage/Adminpage.html";
             } else if (val.permission == "user") {
-                location.href = `../../../../../index.html?id=${users.indexOf(val)}`
+                location.href = `../../../index.html?id=${users.indexOf(val)}`
             }
         }else {
             alert("Tài khoản hoặc mật khẩu không đúng");
