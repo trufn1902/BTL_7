@@ -190,6 +190,27 @@ li {
     flex: 0 0 auto;
 }
 
+.username-link{
+    display: inline-block;
+    vertical-align: middle;
+    width: 170px;
+    box-sizing: border-box;
+    padding-right: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.username-link-text{
+    text-decoration: underline;
+}
+
+.logout{
+    cursor: pointer;
+}
+
+
+
 .uimg {
     width: 27px;
     height: 27px;

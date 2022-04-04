@@ -5,28 +5,36 @@ var arr = [
     stt:"1",
     code: "55043886653",
     phonenumber: "0988456723",
-    ordervalue: "900.000",
+    ordervalue: 900000,
     details: "... Địa chỉ nhận: Đường 23, phố Nguyễn Huệ, Hà Nội, ...",
-    collection: "850.000",
+    collection: 850000,
     status: "Mất",
-    freight: "53.000",
-    comeback: "0",
-    indemnify: "450.000",
+    freight: 53000,
+    comeback: 0,
+    indemnify: 450000,
 },
 
 {
     stt:"2",
     code: "848550438",
     phonenumber: "0345214568",
-    ordervalue: "600.000",
+    ordervalue: 600000,
     details: "... Địa chỉ nhận: Thôn 2, Kim Liên, Quốc Oai, Hà Nội, ...",
-    collection: "0",
+    collection: 0,
     status: "Chuyển hoàn",
-    freight: "22.000",
-    comeback: "11.500",
-    indemnify: "0",
+    freight: 22000,
+    comeback: 11500,
+    indemnify: 0,
 },
 ];
+
+function sum(){
+    var sum = 0
+    arr.forEach(e => {
+        sum += parseInt(e.freight)
+    })
+    console.log(sum)
+}
 
 function delivery(){
     let Expressdelivery = arr.map ((ord,i) => {
@@ -54,6 +62,7 @@ function delivery(){
          `;
     });
     contentlist.innerHTML = Expressdelivery.join("");
+    sum()
 }
 
 //Add

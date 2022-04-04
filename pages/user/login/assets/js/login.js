@@ -7,19 +7,48 @@ let users = [
     {
         username: 'trung',
         password: '123',
-        permission: 'user'
+        permission: 'user',
     },
     {
         username: 'viet',
         password: '123',
-        permission: 'user'
+        permission: 'user',
     },
     {
         username: 'hong',
         password: '123',
-        permission: 'user'
+        permission: 'user',
     },
 ]
+
+const data = {
+    users: [
+        {
+            id: 1,
+            name: 'Nguyễn Văn Trung',
+            address: 'Hà Nội',
+            email: 'trung@tlu.edu.vn',
+            dob: '19th February, 2002'
+        },
+        {
+            id: 2,
+            name: 'Hoàng Bảo Việt',
+            address: 'Hà Nội',
+            email: 'viet@tlu.edu.vn',
+            dob: '19th February, 1998'
+        },
+        {
+            id: 3,
+            name: 'Hoàng Thu Hồng',
+            address: 'Hà Nội',
+            email: 'hong@tlu.edu.vn',
+            dob: '19th February, 2002'
+        }
+    ]
+}
+
+let json_data = JSON.stringify(data)
+window.localStorage.setItem('db_users', JSON.stringify(data))
 
 function check_user(username, password, users) {
     for (i in users) {
@@ -63,12 +92,11 @@ function login(){
             if (val.permission == "admin") {
                 location.href = "../../../../../Adminpage/Adminpage.html";
             } else if (val.permission == "user") {
-                location.href = "../../../../../index.html";
+                location.href = `../../../../../index.html?id=${users.indexOf(val)}`
             }
         }else {
             alert("Tài khoản hoặc mật khẩu không đúng");
         }
-
     }
 
 }
