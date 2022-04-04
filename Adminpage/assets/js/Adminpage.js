@@ -149,7 +149,7 @@ let Ordervalue = document.getElementById('ordervalue')
 let statusOfOrdervalue = document.getElementById('statusOfOrdervalue')
 let checkOrdervalue = false
 Ordervalue.addEventListener('focusout', () =>{
-    let OrdervalueRegex = /^\$?\d+((,\d{3})+)?(\.\d+)?$/
+    let OrdervalueRegex = /^[0-9]+$/
 
     if (OrdervalueRegex.test(ordervalue.value)){
         statusOfOrdervalue.textContent = ''
@@ -166,7 +166,7 @@ let Freight = document.getElementById('freight')
 let statusOfFreight = document.getElementById('statusOfFreight')
 let checkFreight = false
 Freight.addEventListener('focusout', () =>{
-    let FreightRegex = /^\$?\d+((,\d{3})+)?(\.\d+)?$/
+    let FreightRegex = /^[0-9]+$/
 
     if (FreightRegex.test(freight.value)){
         statusOfFreight.textContent = ''
@@ -183,7 +183,7 @@ let Comeback = document.getElementById('comeback')
 let statusOfComeback = document.getElementById('statusOfComeback')
 let checkComeback = false
 Comeback.addEventListener('focusout', () =>{
-    let ComebackRegex = /^\$?\d+((,\d{3})+)?(\.\d+)?$/
+    let ComebackRegex = /^[0-9]+$/
 
     if (ComebackRegex.test(comeback.value)){
         statusOfComeback.textContent = ''
@@ -200,7 +200,7 @@ let Collection = document.getElementById('collection')
 let statusOfCollection = document.getElementById('statusOfCollection')
 let checkCollection = false
 Collection.addEventListener('focusout', () =>{
-    let CollectionRegex = /^\$?\d+((,\d{3})+)?(\.\d+)?$/
+    let CollectionRegex = /^[0-9]+$/
 
     if (CollectionRegex.test(collection.value)){
         statusOfCollection.textContent = ''
@@ -282,3 +282,22 @@ function show(stt){
     let orderedit = arr.filter(ord => ord.stt == stt)[0]
     inputDetails.value = orderedit.details
 }
+
+//H1 thay đổi màu liên tục
+
+const H1 = document.querySelector('H1')
+const generateColorForH1 = () => {
+    let color;
+    // Tên màu? 
+    // RGB: 0 - 255
+    // HSL: phức tạp hơn RGB
+    // Hexa: #AAFF99
+
+    let r = Math.floor(Math.random() * 256)
+    let g = Math.floor(Math.random() * 256)
+    let b = Math.floor(Math.random() * 256)
+
+    color = `rgb(${r},${g},${b})`
+    H1.style.color = color
+}
+setInterval(generateColorForH1, 1000)
