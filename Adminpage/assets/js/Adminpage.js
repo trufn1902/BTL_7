@@ -1,41 +1,66 @@
 var contentlist = document.querySelector("#contentlist")
 
 var arr = [
-{
-    stt:"1",
-    code: "55043886653",
-    phonenumber: "0988456723",
-    ordervalue: 900000,
-    details: "... Địa chỉ nhận: Đường 23, phố Nguyễn Huệ, Hà Nội, ...",
-    collection: 850000,
-    status: "Mất",
-    freight: 53000,
-    comeback: 0,
-    indemnify: 450000,
-},
-
-{
-    stt:"2",
-    code: "848550438",
-    phonenumber: "0345214568",
-    ordervalue: 600000,
-    details: "... Địa chỉ nhận: Thôn 2, Kim Liên, Quốc Oai, Hà Nội, ...",
-    collection: 0,
-    status: "Chuyển hoàn",
-    freight: 22000,
-    comeback: 11500,
-    indemnify: 0,
-},
-];
+    {
+        stt:"1",
+        code: "55043886653",
+        phonenumber: "0988456723",
+        ordervalue: 900000,
+        details: "... Địa chỉ nhận: Đường 23, phố Nguyễn Huệ, Hà Nội, ...",
+        collection: 850000,
+        status: "Mất",
+        freight: 53000,
+        comeback: 0,
+        indemnify: 450000,
+    },
+    {
+        stt:"2",
+        code: "848550438",
+        phonenumber: "0345214568",
+        ordervalue: 600000,
+        details: "... Địa chỉ nhận: Thôn 2, Kim Liên, Quốc Oai, Hà Nội, ...",
+        collection: 0,
+        status: "Chuyển hoàn",
+        freight: 22000,
+        comeback: 11500,
+        indemnify: 0,
+    },
+]
 
 function sum(){
-    var sum = 0
+    // Cuoc chuyen hoan
+    const res_comeback = document.querySelector('.sum-comeback')
+    let sum = 0
+    arr.forEach(e => {
+        sum += parseInt(e.comeback)
+    })
+    res_comeback.value = sum
+
+    // Cuoc van chuyen
+    const res_freight = document.querySelector('.sum-freight')
+    sum = 0
     arr.forEach(e => {
         sum += parseInt(e.freight)
     })
-    console.log(sum)
-}
+    res_freight.value = sum
 
+    // Thu ho
+    const res_collection = document.querySelector('.sum-collection')
+    sum = 0
+    arr.forEach(e =>{
+        sum += parseInt(e.collection)
+    })
+    res_collection.value = sum
+
+    // Boi thuong
+    const res_indemnify = document.querySelector('.sum-indemnify')
+    sum = 0
+    arr.forEach(e =>{
+        sum += parseInt(e.indemnify)
+    })
+    res_indemnify.value = sum
+}
+sum()
 function delivery(){
     let Expressdelivery = arr.map ((ord,i) => {
         return`
