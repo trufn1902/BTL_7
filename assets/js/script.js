@@ -11,3 +11,14 @@ nav_hovers.forEach(nav => {
             nav.classList.remove('itementer')
     })
 })
+
+const chooseLang = document.querySelector('.fa-angle-down')
+const rotate = chooseLang.parentElement
+
+rotate.addEventListener('mouseover', () =>{
+    chooseLang.style.transform = 'rotate(180deg)'
+})
+
+rotate.addEventListener('mouseout', () =>{
+    chooseLang.style.transform = 'rotate(0)'
+})

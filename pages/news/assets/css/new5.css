@@ -1,0 +1,35 @@
+.new5 h1{
+    text-align: center;
+    padding-top: 75px;
+}
+
+.new5 h5{
+    font-size: 14px;
+    color: #4A4A4A;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.new5 p{
+    font-family: Roboto, serif;
+    font-size: 18px;
+    width: 900px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.imgnew5{
+    width: 888px;
+    padding-left: 310px;
+    padding-bottom: 15px;
+    height: 520px;
+}
+
+.new5 h4{
+    font-size: 18px;
+    width: 900px;
+    margin: auto;
+    font-weight: normal;
+}
