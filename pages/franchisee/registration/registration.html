@@ -20,7 +20,7 @@
     <!-- start: Header -->
     <header class="header-container abs">
         <div class="content">
-            <a href="/" id="homeLogo" class="header-img-link">
+            <a href="../../../index.html" id="homeLogo" class="header-img-link">
                 <img src="../../../assets/img/logo.png" alt="" class="header-img" />
             </a>
             <div class="left">
@@ -28,35 +28,35 @@
                     <ul class="nav-container">
                         <li class="nav-item item-link-effect">
                             <a
-                                href="/"
+                                href="../../../index.html"
                                 class="item-style nav-link link-active"
                                 >Trang chủ</a
                             >
                         </li>
                         <li class="nav-item item-link-effect">
-                            <a href="" class="item-style nav-link"
+                            <a href="../../BEST Express/about_express/" class="item-style nav-link"
                                 >BEST Express</a
                             >
                             <ul class="sub-item">
                                 <li>
-                                    <a href="" class="sub-item-style"
+                                    <a href="../../BEST Express/about_express/" class="sub-item-style"
                                         >Về BEST Express</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="" class="sub-item-style"
+                                    <a href="../../BEST Express/resolve/resolve.html" class="sub-item-style"
                                         >Giải quyết khiếu nại</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="" class="sub-item-style"
+                                    <a href="../../BEST Express/forbidden/forbidden.html" class="sub-item-style"
                                         >Hàng cấm gửi</a
                                     >
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item item-link-effect">
-                            <a href="" class="item-style nav-link"
+                            <a href="../aboutFM/aboutFM.html" class="item-style nav-link"
                                 >Nhượng quyền</a
                             >
                             <ul class="sub-item">
@@ -73,27 +73,27 @@
                             </ul>
                         </li>
                         <li class="nav-item item-link-effect">
-                            <a href="" class="item-style nav-link"
+                            <a href="../../support/Contact.html" class="item-style nav-link"
                                 >Hỗ trợ</a
                             >
                             <ul class="sub-item">
                                 <li>
-                                    <a href="" class="sub-item-style"
+                                    <a href="../../support/Contact.html" class="sub-item-style"
                                         >Thông tin liên hệ</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="" class="sub-item-style"
+                                    <a href="../../support/Question.html" class="sub-item-style"
                                         >Câu hỏi thường gặp</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="" class="sub-item-style"
+                                    <a href="../../support/Condition.html" class="sub-item-style"
                                         >Điều kiện - Điều khoản</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="" class="sub-item-style"
+                                    <a href="../../support/Brand.html" class="sub-item-style"
                                         >Chính sách Nhận diện nhãn hiệu</a
                                     >
                                 </li>
@@ -105,7 +105,7 @@
                             >
                         </li>
                         <li class="nav-item item-link-effect">
-                            <a href="" class="item-style nav-link"
+                            <a href="../../news/new.html" class="item-style nav-link"
                                 >Tin tức</a
                             >
                         </li>
@@ -128,7 +128,7 @@
                     </ul>
                 </div>
                 <div class="uname">
-                    <a href="" class="item-style">
+                    <a href="../../user/login/login.html" class="item-style">
                         <img
                             class="uimg"
                             src="../../../assets/img/login.png"
@@ -137,7 +137,7 @@
                         <span>Đăng nhập</span>
                     </a>
                     <span style="margin: 0px 13px">|</span>
-                    <a href="" id="homePageRegister" class="item-style">
+                    <a href="../../user/register/register.html" id="homePageRegister" class="item-style">
                         <span>Đăng ký thông tin tài khoản mới</span>
                     </a>
                 </div>
@@ -177,7 +177,7 @@
             </label>
             <div style="position: relative;">
                 <input type="text" placeholder="Họ & tên" id="mem_name" oninput="checkName()">
-                <i class="fa-solid fa-xmark"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
             </div>
             
             <div class="error-input" id="statusOfName"></div>
@@ -191,8 +191,8 @@
             <label style="display: block" for="">
                 <span class="required">* </span><span>Email</span>
             </label>
-            <input type="text" placeholder="Email" id="mem_email">
-            <div class="error-input"></div>
+            <input type="email" placeholder="Email" id="mem_email">
+            <div class="error-input" id="statusOfEmail"></div>
             <label style="display: block" for="">
                 <span class="required">* </span><span>Thành phố-Tỉnh/Quận-Huyện/Phường-Xã</span>
             </label>
@@ -249,7 +249,7 @@
                 <span class="required">* </span><span>Nghề nghiệp hiện tại của bạn</span>
             </label>
             <input type="text" placeholder="Nghề nghiệp hiện tại của bạn" id="mem_currentjob">
-            <div class="error-input"></div>
+            <div class="error-input" id="statusOfJob"></div>
             <div style="text-align: center;text-justify:auto;">
                 <button id="Regis-icon">Đăng ký ngay</button>
             </div>
