@@ -25,24 +25,27 @@ const data = {
     users: [
         {
             id: 1,
+            username: 'trung',
             name: 'Nguyễn Văn Trung',
             address: 'Hà Nội',
             email: 'trung@tlu.edu.vn',
-            dob: '19th February, 2002'
+            phone: '0359052681'
         },
         {
             id: 2,
+            username: 'viet',
             name: 'Hoàng Bảo Việt',
             address: 'Hà Nội',
             email: 'viet@tlu.edu.vn',
-            dob: '19th February, 1998'
+            phone: '0359052681'
         },
         {
             id: 3,
+            username: 'hong',
             name: 'Hoàng Thu Hồng',
             address: 'Hà Nội',
             email: 'hong@tlu.edu.vn',
-            dob: '19th February, 2002'
+            phone: '0359052681'
         }
     ]
 }
