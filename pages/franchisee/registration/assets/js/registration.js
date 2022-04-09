@@ -44,10 +44,51 @@ memPhone.addEventListener('focusout',()=>{
     let memPhoneRegex =  /^[0-9]{8,11}$/
     if (memPhoneRegex.test(memPhone.value)) {
         chekcPhone =true
+        statusOfPhone.textContent=' '
     }
     else{
         statusOfPhone.textContent = 'Số điện thoại di động không khả dụng'
         statusOfPhone.style.color = '#FF0000'
         chekcPhone = false
+    }
+})
+
+//email
+
+let email = document.getElementById('mem_email')
+let statusOfEmail = document.getElementById('statusOfEmail')
+let checkEmail = false
+
+email.addEventListener('focusout', () =>{
+    let emailRegex = /[A-Z0-9._%+-]+@[A-Z0-9-]+\.+[A-Z]{2,4}/igm
+
+    if (emailRegex.test(email.value)){
+        statusOfEmail.textContent = ' '
+        checkEmail = true
+    }else{
+        statusOfEmail.textContent = 'Email không hợp lệ'
+        statusOfEmail.style.color = 'red'
+        checkEmail = false
+    }
+})
+
+//Job
+let memJob = document.getElementById('mem_currentjob')
+let statusOfJob = document.getElementById('statusOfJob')
+let checkJob = false
+memJob.addEventListener('focusout',()=>{
+    let memJobRegex =  /[a-z]$/
+    if (memJobRegex.test(memJob.value)) {
+        statusOfJob.textContent=' '
+        checkJob =true
+    }
+    // if (memJob.length!=0)
+    // {
+    //     checkJob = true
+    // }
+    else{
+        statusOfJob.textContent = 'Nghề nghiệp không được để trống'
+        statusOfJob.style.color = '#FF0000'
+        checkJob = false
     }
 })
