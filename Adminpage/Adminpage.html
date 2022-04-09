@@ -16,13 +16,18 @@
   </head>
   <body>
     <div class="adminpage">
-      <h1 id="H1">Chào mừng bạn đến với trang quản trị BEST Inc</h1>
+      <h1 id="H1">
+        <a href="../index.html" class="house"
+          ><i class="fa-solid fa-house" style="color:deeppink"></i
+        ></a>
+        &nbsp;&nbsp;Chào mừng bạn đến với trang quản trị BEST Inc
+      </h1>
       <hr />
       <h2>Quản lý dòng tiền</h2>
 
       <div class="money">
         <div class="row">
-          <div class="col" style="background-color: pink;">
+          <div class="col" style="background-color: pink">
             <div class="col-1">
               <img src="assets/imgdesigns/comeback.jpg" alt="" class="icon" />
             </div>
@@ -31,12 +36,12 @@
                 <h4>Cước chuyển hoàn</h4>
               </div>
               <div class="row-2">
-                <input type="text" class="sum-comeback">
+                <input type="text" class="sum-comeback" />
               </div>
             </div>
           </div>
 
-          <div class="col" style="background-color: rgb(149, 243, 245);">
+          <div class="col" style="background-color: rgb(149, 243, 245)">
             <div class="col-1">
               <img src="assets/imgdesigns/successful.png" alt="" class="icon" />
             </div>
@@ -45,12 +50,12 @@
                 <h4>Cước vận chuyển</h4>
               </div>
               <div class="row-2">
-                <input type="text" class="sum-freight"/>
+                <input type="text" class="sum-freight" />
               </div>
             </div>
           </div>
 
-          <div class="col" style="background-color: rgb(248, 177, 248);">
+          <div class="col" style="background-color: rgb(248, 177, 248)">
             <div class="col-1">
               <img src="assets/imgdesigns/collection.png" alt="" class="icon" />
             </div>
@@ -59,12 +64,12 @@
                 <h4>Tiền thu hộ</h4>
               </div>
               <div class="row-2">
-                <input type="text" class="sum-collection"/>
+                <input type="text" class="sum-collection" />
               </div>
             </div>
           </div>
 
-          <div class="col" style="background-color: rgb(201, 248, 201);">
+          <div class="col" style="background-color: rgb(201, 248, 201)">
             <div class="col-1">
               <img src="assets/imgdesigns/indemnify.jpg" alt="" class="icon" />
             </div>
@@ -73,7 +78,7 @@
                 <h4>Bồi thường thiệt hại</h4>
               </div>
               <div class="row-2">
-                <input type="text" class="sum-indemnify"/>
+                <input type="text" class="sum-indemnify" />
               </div>
             </div>
           </div>
@@ -90,11 +95,18 @@
         </div>
 
         <div class="addmenu">
-          <a href="#addnew"><button id="morenew"><i class="fa-solid fa-plus"></i>Thêm mới</button></a>
+          <a href="#addnew"
+            ><button id="morenew">
+              <i class="fa-solid fa-plus"></i>Thêm mới
+            </button></a
+          >
         </div>
       </div>
 
-      <a href="assets/imgdesigns/download.jpg" download="Quản lý vận đơn" class="down"
+      <a
+        href="assets/imgdesigns/download.jpg"
+        download="Quản lý vận đơn"
+        class="down"
         ><i class="fa-solid fa-download" style="padding-right: 10px"></i>
         Download</a
       >
@@ -123,7 +135,7 @@
       <h3>Thông tin chi tiết</h3>
 
       <form id="addnew" class="form" ction="">
-        <div class="row" style="padding-top: 20px;">
+        <div class="row" style="padding-top: 20px">
           <div class="col-1">Mã vận đơn</div>
           <div class="col-2">
             <input
@@ -220,28 +232,28 @@
           </div>
         </div>
 
-        <div class="row" style="padding-left: 90px; padding-bottom: 20px; ">
+        <div class="row" style="padding-left: 90px; padding-bottom: 20px">
           <div class="col-1">
             <input
-                    type="submit"
-                    name="add"
-                    id="add"
-                    value="Thêm"
-                    class="add"
-                    style="width: 120px"
-                    disabled
-                />
+              type="submit"
+              name="add"
+              id="add"
+              value="Thêm"
+              class="add"
+              style="width: 120px"
+              disabled
+            />
           </div>
           <div class="col-2">
             <input
-                    type="submit"
-                    name="edit"
-                    id="edit"
-                    value="Cập nhật"
-                    class="edit"
-                    style="width:120px"
-                    disabled
-                />
+              type="submit"
+              name="edit"
+              id="edit"
+              value="Cập nhật"
+              class="edit"
+              style="width: 120px"
+              disabled
+            />
           </div>
         </div>
       </form>
