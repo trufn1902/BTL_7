@@ -9,3 +9,9 @@ phone.textContent = user_login.phone.slice(0, 2) + '*****' + user_login.phone.sl
 
 const email = document.querySelector('.email')
 email.textContent = user_login.email
+
+logout_text.onclick = () =>{
+    location.href = '../../../index.html'
+}
+
+user_link_text.href = `#`
