@@ -38,7 +38,7 @@ user_link.className = 'username-link'
 const user_link_text = document.createElement('a')
 user_link_text.className = 'item-style username-link-text'
 user_link_text.textContent = user_login.name
-user_link_text.href = `pages/user/profile/profile.html?id=${user_id}`
+user_link_text.href = `pages/user/profile.html?id=${user_id}`
 user_link.appendChild(user_link_text)
 const logout = document.createElement('span')
 logout.className = 'logout'
