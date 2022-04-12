@@ -27,21 +27,21 @@ const data = {
             id: 1,
             username: 'trung',
             name: 'Nguyễn Văn Trung',
-            email: 'trung@tlu.edu.vn',
+            email: '2051063818@e.tlu.edu.vn',
             phone: '0359052681'
         },
         {
             id: 2,
             username: 'viet',
             name: 'Hoàng Bảo Việt',
-            email: 'viet@tlu.edu.vn',
-            phone: '0359052681'
+            email: '2051063437@e.tlu.edu.vn',
+            phone: '0367289660'
         },
         {
             id: 3,
             username: 'hong',
             name: 'Hoàng Thu Hồng',
-            email: 'hong@tlu.edu.vn',
+            email: '2051060528@e.tlu.edu.vn',
             phone: '0363334505'
         }
     ]
